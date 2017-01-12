@@ -15,13 +15,13 @@ title: LeadWise
   <div class="wrap-content">
     <h3> Leadwise Community </h3>
 
-    {% for data in site.posts %}
+    {% for profile in site.posts | sort: "title" %}
     <div class="about-col-2">
-      <img src="/assets/images/avatar/{{ data.avatar }}" alt="{{ data.name }}">
-      <h4><a href="{{ data.url }}">{{ data.name }}</a></h4>
+      <img src="/assets/images/avatar/{{ profile.avatar }}" alt="{{ profile.name }}">
+      <h4><a href="{{ profile.url }}">{{ profile.name }}</a></h4>
 
       <div>
-      {% for badge in data.badges %}
+      {% for badge in profile.badges %}
       <i class="fa {{ badge }} fa-2x"></i>
       {% endfor %}
       </div>
