@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div>
+   <section>
+       <img src="/assets/images/avatar/{{ page.avatar }}" alt="{{ page.name }}">
+       <h3> {{ page.name }} </h3>
+   </section>
+
+   <section>
+       <strong> Badges: </strong>
+       {% for badge in page.badges %}
+       <i class="fa {{ badge }} fa-2x"></i>
+       {% endfor %}
+   </section>
+
+   <section>
+       <strong> Bio: </strong> {{ page.bio }}
+   </section>
+
+   <section>
+       <strong>Testemonials </strong>
+       {% for testemonial in page.testemonials %}
+          {{ testemonial.name }}
+
+       {% endfor %}
+  </section>       
+
+</div>

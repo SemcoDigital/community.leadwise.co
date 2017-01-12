@@ -15,8 +15,7 @@ title: LeadWise
   <div class="wrap-content">
     <h3> Leadwise Community </h3>
 
-    {% for profile in site.data.profiles %}
-    {% for data in profile[1] %}
+    {% for data in site.posts %}
     <div class="about-col-2">
       <img src="/assets/images/avatar/{{ data.avatar }}" alt="{{ data.name }}">
       <h4><a href="{{ data.url }}">{{ data.name }}</a></h4>
@@ -28,7 +27,6 @@ title: LeadWise
       </div>
 
   </div>
-    {% endfor %}
     {% endfor %}
 
   </div>

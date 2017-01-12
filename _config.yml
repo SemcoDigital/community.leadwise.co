@@ -1,7 +1,3 @@
 exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'Procfile', 'CNAME', 'templates']
 
-page_gen:
-    - data: 'profiles/frederico'
-      template: 'default'
-      name: 'name'
-      dir: 'profile'
+permalink: pretty
