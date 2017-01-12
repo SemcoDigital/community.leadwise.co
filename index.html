@@ -1,0 +1,35 @@
+---
+layout: default
+title: LeadWise
+---
+
+<!--Top Social Media-->
+<div class="top-social">
+  {% include social_links.html %}
+</div>
+
+{% include banner_products.html %}
+
+<!-- community -->
+<div class="about-lw-co">
+  <div class="wrap-content">
+    <h3> Leadwise Community </h3>
+
+    {% for profile in site.data.profiles %}
+    {% for data in profile[1] %}
+    <div class="about-col-2">
+      <img src="/assets/images/avatar/{{ data.avatar }}" alt="{{ data.name }}">
+      <h4><a href="{{ data.url }}">{{ data.name }}</a></h4>
+
+      <div>
+      {% for badge in data.badges %}
+      <i class="fa {{ badge }} fa-2x"></i>
+      {% endfor %}
+      </div>
+
+  </div>
+    {% endfor %}
+    {% endfor %}
+
+  </div>
+</div>
