@@ -44,6 +44,7 @@
 .single-expert{
   margin-top: 2em;
   @include span-columns(6);
+  @include omega();
 
   .single-expert-img{
     img{
@@ -74,4 +75,17 @@
     }
   }
 
+}
+
+//Org Designer Ad
+.org-designer-ad{
+  color: $font-white;
+  background-image: url("../images/org-designer-ad-back.jpg");
+  background-repeat: no-repeat;
+  // background-position: left;
+  padding: 2em;
+  text-align: center;
+  h3{
+    margin: .5em 0;
+  }
 }

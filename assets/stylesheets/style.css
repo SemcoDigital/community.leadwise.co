@@ -87,7 +87,7 @@ textarea {
 textarea {
   resize: vertical; }
 
-button, .btn {
+button, .btn, .btn-cta {
   background: #FFCC00;
   border: 0;
   color: #000000;
@@ -97,7 +97,7 @@ button, .btn {
   letter-spacing: 0.1em;
   padding: .65em 1em;
   text-decoration: none; }
-  button:hover, .btn:hover {
+  button:hover, .btn:hover, .btn-cta:hover {
     cursor: pointer;
     text-decoration: none; }
 
@@ -174,7 +174,8 @@ button, .btn {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 48.82117%; }
+  width: 48.82117%;
+  margin-right: 0; }
   .single-expert:last-child {
     margin-right: 0; }
   .single-expert .single-expert-img img {
@@ -196,5 +197,14 @@ button, .btn {
     .single-expert .single-expert-txt .language {
       font-size: .9em;
       font-style: italic; }
+
+.org-designer-ad {
+  color: #FFFFFF;
+  background-image: url("../images/org-designer-ad-back.jpg");
+  background-repeat: no-repeat;
+  padding: 2em;
+  text-align: center; }
+  .org-designer-ad h3 {
+    margin: .5em 0; }
 
 /*# sourceMappingURL=style.css.map */
