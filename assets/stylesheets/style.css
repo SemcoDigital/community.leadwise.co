@@ -178,10 +178,22 @@ button, .btn, .btn-cta {
   margin-right: 0; }
   .single-expert:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 420px) {
+    .single-expert {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 100%; }
+      .single-expert:last-child {
+        margin-right: 0; } }
   .single-expert .single-expert-img img {
     border-radius: 50%;
     float: left;
     width: 30%; }
+    @media screen and (max-width: 420px) {
+      .single-expert .single-expert-img img {
+        width: 100%;
+        padding: 0 25%; } }
   .single-expert .single-expert-txt {
     display: inline-block; }
     .single-expert .single-expert-txt h5, .single-expert .single-expert-txt p {
