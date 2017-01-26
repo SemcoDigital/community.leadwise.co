@@ -40,3 +40,30 @@
     text-align: left;
   }
 }
+
+.single-expert{
+  margin-top: 2em;
+  @include span-columns(6);
+
+  .single-expert-img{
+    img{
+      border-radius: 50%;
+      float: left;
+      width: 30%;
+    }
+  }
+  .single-expert-txt{
+    display: inline-block;
+    h5, p{
+      text-align: left;
+    }
+    h5{
+      color: $lw-blue;
+      font-size: 1.2em;
+    }
+    p{
+      margin: .5em 0;
+    }
+  }
+
+}

@@ -169,4 +169,26 @@ button, .btn {
       line-height: 27px;
       text-align: left; } }
 
+.single-expert {
+  margin-top: 2em;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .single-expert:last-child {
+    margin-right: 0; }
+  .single-expert .single-expert-img img {
+    border-radius: 50%;
+    float: left;
+    width: 30%; }
+  .single-expert .single-expert-txt {
+    display: inline-block; }
+    .single-expert .single-expert-txt h5, .single-expert .single-expert-txt p {
+      text-align: left; }
+    .single-expert .single-expert-txt h5 {
+      color: #30A7E9;
+      font-size: 1.2em; }
+    .single-expert .single-expert-txt p {
+      margin: .5em 0; }
+
 /*# sourceMappingURL=style.css.map */
