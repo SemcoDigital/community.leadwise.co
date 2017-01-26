@@ -1,0 +1,42 @@
+// Map
+.expert-map {
+  background-image: url("../images/community-map.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 30em;
+  width: 100%;
+  @include media($mobile) {
+    height: 10em;
+  }
+}
+
+// Community List
+.community-list {
+  text-align: center;
+  padding: 60px 0;
+  h3 {
+    color: $lw-blue;
+    margin: 20px 0 0 0;
+
+    @include media($mobile) {
+      font-size: 34px;
+      text-align: left;
+      margin: 0;
+    }
+  }
+  .wrap-content{
+    padding: 0 10%;
+  }
+}
+.community-description {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: bold;
+  color: $font-lw-light-bg;
+
+  @include media($mobile) {
+    font-size: 17px;
+    line-height: 27px;
+    text-align: left;
+  }
+}
