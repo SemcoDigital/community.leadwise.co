@@ -59,10 +59,18 @@
     }
     h5{
       color: $lw-blue;
+      font-family: 'open_sans_bold';
       font-size: 1.2em;
     }
     p{
       margin: .5em 0;
+    }
+    .activity{
+        font-family: 'open_sans_bold';
+      }
+    .language{
+      font-size: .9em;
+      font-style: italic;
     }
   }
 

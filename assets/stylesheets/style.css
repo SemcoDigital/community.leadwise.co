@@ -187,8 +187,14 @@ button, .btn {
       text-align: left; }
     .single-expert .single-expert-txt h5 {
       color: #30A7E9;
+      font-family: 'open_sans_bold';
       font-size: 1.2em; }
     .single-expert .single-expert-txt p {
       margin: .5em 0; }
+    .single-expert .single-expert-txt .activity {
+      font-family: 'open_sans_bold'; }
+    .single-expert .single-expert-txt .language {
+      font-size: .9em;
+      font-style: italic; }
 
 /*# sourceMappingURL=style.css.map */
