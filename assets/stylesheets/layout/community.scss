@@ -96,3 +96,11 @@
     margin: .5em 0;
   }
 }
+
+// Single Org Designer
+.single-expert-profile{
+  background: $lw-light-bg;
+  .expert-profile-block{
+    @extend .single-expert-img;
+  }
+}
