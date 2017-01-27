@@ -73,6 +73,10 @@
     p{
       margin: .5em 0;
     }
+    .expert-name{
+      color: $lw-blue;
+      font-family: 'open_sans_bold';
+    }
     .activity{
         font-family: 'open_sans_bold';
       }
@@ -89,7 +93,6 @@
   color: $font-white;
   background-image: url("../images/org-designer-ad-back.jpg");
   background-repeat: no-repeat;
-  // background-position: left;
   padding: 2em;
   text-align: center;
   h3{
@@ -100,7 +103,46 @@
 // Single Org Designer
 .single-expert-profile{
   background: $lw-light-bg;
+  @include span-columns(4);
+
   .expert-profile-block{
-    @extend .single-expert-img;
+    float: right;
+    padding: 1em;
+    text-align: right;
+    width: 50%;
+    img{
+      border-radius: 50%;
+      width: 100%;
+      @include media($mobile) {
+        width: 100%;
+        padding: 0 25%;
+      }
+    }
+    p{
+      margin: .5em;
+    }
+    .expert-name{
+      color: $lw-blue;
+      font-family: 'open_sans_bold';
+    }
+  }
+}
+
+// Single Org Designer Content
+.expert-full-content{
+  @include span-columns(8);
+  @include omega();
+  margin-bottom: 4em;
+  padding-right: 10%;
+  .community-description{
+    margin-top: 0;
+  }
+  .tags{
+    span{
+      background: $lw-light-bg;
+      margin-right: 1em;
+      padding: .2em .5em;
+      border-radius: 4px;
+    }
   }
 }
