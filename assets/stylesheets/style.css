@@ -269,5 +269,14 @@ button, .btn, .btn-cta {
   .expert-full-content .expert-program-link {
     line-height: 4em;
     margin: 0 2em; }
+  .expert-full-content .expert-contact-infos {
+    border: 1px solid #EAEAEA;
+    padding: 2em; }
+    .expert-full-content .expert-contact-infos section {
+      display: block;
+      float: left;
+      height: 16em;
+      padding: 1em 2em 0 0;
+      width: 40%; }
 
 /*# sourceMappingURL=style.css.map */
