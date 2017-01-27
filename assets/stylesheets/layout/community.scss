@@ -17,23 +17,22 @@
   h3 {
     color: $lw-blue;
     margin: 20px 0 0 0;
-
     @include media($mobile) {
       font-size: 34px;
       text-align: left;
       margin: 0;
     }
   }
-  .wrap-content{
+  .wrap-content {
     padding: 0 10%;
   }
 }
+
 .community-description {
   font-size: 24px;
   line-height: 36px;
   font-weight: bold;
   color: $font-lw-light-bg;
-
   @include media($mobile) {
     font-size: 17px;
     line-height: 27px;
@@ -41,16 +40,15 @@
   }
 }
 
-.single-expert{
+.single-expert {
   margin-top: 2em;
   @include span-columns(6);
   @include omega();
   @include media($mobile) {
     @include span-columns(12);
   }
-
-  .single-expert-img{
-    img{
+  .single-expert-img {
+    img {
       border-radius: 50%;
       float: left;
       width: 30%;
@@ -60,57 +58,50 @@
       }
     }
   }
-  .single-expert-txt{
+  .single-expert-txt {
     display: inline-block;
-    h5, p{
+    p {
+      margin: .5em 0;
       text-align: left;
     }
-    h5{
-      color: $lw-blue;
-      font-family: 'open_sans_bold';
-      font-size: 1.2em;
-    }
-    p{
-      margin: .5em 0;
-    }
-    .expert-name{
-      color: $lw-blue;
-      font-family: 'open_sans_bold';
-    }
-    .activity{
-        font-family: 'open_sans_bold';
-      }
-    .language{
-      font-size: .9em;
-      font-style: italic;
-    }
   }
+}
 
+// Home and Internal Classes
+.expert-name {
+  color: $lw-blue;
+  font-family: 'open_sans_bold';
+}
+.expert-language {
+  font-size: .9em;
+  font-style: italic;
+}
+.expert-activity {
+  font-family: 'open_sans_bold';
 }
 
 //Org Designer Ad
-.org-designer-ad{
+.org-designer-ad {
   color: $font-white;
   background-image: url("../images/org-designer-ad-back.jpg");
   background-repeat: no-repeat;
   padding: 2em;
   text-align: center;
-  h3{
+  h3 {
     margin: .5em 0;
   }
 }
 
 // Single Org Designer
-.single-expert-profile{
+.single-expert-profile {
   background: $lw-light-bg;
   @include span-columns(4);
-
-  .expert-profile-block{
+  .expert-profile-block {
     float: right;
     padding: 1em;
     text-align: right;
     width: 50%;
-    img{
+    img {
       border-radius: 50%;
       width: 100%;
       @include media($mobile) {
@@ -118,31 +109,35 @@
         padding: 0 25%;
       }
     }
-    p{
+    p {
       margin: .5em;
-    }
-    .expert-name{
-      color: $lw-blue;
-      font-family: 'open_sans_bold';
     }
   }
 }
 
 // Single Org Designer Content
-.expert-full-content{
+.expert-full-content {
   @include span-columns(8);
   @include omega();
   margin-bottom: 4em;
   padding-right: 10%;
-  .community-description{
+  .community-description {
     margin-top: 0;
   }
-  .tags{
-    span{
+  .tags {
+    span {
       background: $lw-light-bg;
       margin-right: 1em;
       padding: .2em .5em;
       border-radius: 4px;
     }
+  }
+  .expert-program-title {
+    color: $lw-blue;
+    float: left;
+  }
+  .expert-program-link {
+    line-height: 4em;
+    margin: 0 2em;
   }
 }

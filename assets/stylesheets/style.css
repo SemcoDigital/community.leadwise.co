@@ -199,22 +199,20 @@ button, .btn, .btn-cta {
         padding: 0 25%; } }
   .single-expert .single-expert-txt {
     display: inline-block; }
-    .single-expert .single-expert-txt h5, .single-expert .single-expert-txt p {
-      text-align: left; }
-    .single-expert .single-expert-txt h5 {
-      color: #30A7E9;
-      font-family: 'open_sans_bold';
-      font-size: 1.2em; }
     .single-expert .single-expert-txt p {
-      margin: .5em 0; }
-    .single-expert .single-expert-txt .expert-name {
-      color: #30A7E9;
-      font-family: 'open_sans_bold'; }
-    .single-expert .single-expert-txt .activity {
-      font-family: 'open_sans_bold'; }
-    .single-expert .single-expert-txt .language {
-      font-size: .9em;
-      font-style: italic; }
+      margin: .5em 0;
+      text-align: left; }
+
+.expert-name {
+  color: #30A7E9;
+  font-family: 'open_sans_bold'; }
+
+.expert-language {
+  font-size: .9em;
+  font-style: italic; }
+
+.expert-activity {
+  font-family: 'open_sans_bold'; }
 
 .org-designer-ad {
   color: #FFFFFF;
@@ -247,9 +245,6 @@ button, .btn, .btn-cta {
           padding: 0 25%; } }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
-    .single-expert-profile .expert-profile-block .expert-name {
-      color: #30A7E9;
-      font-family: 'open_sans_bold'; }
 
 .expert-full-content {
   float: left;
@@ -268,5 +263,11 @@ button, .btn, .btn-cta {
     margin-right: 1em;
     padding: .2em .5em;
     border-radius: 4px; }
+  .expert-full-content .expert-program-title {
+    color: #30A7E9;
+    float: left; }
+  .expert-full-content .expert-program-link {
+    line-height: 4em;
+    margin: 0 2em; }
 
 /*# sourceMappingURL=style.css.map */
