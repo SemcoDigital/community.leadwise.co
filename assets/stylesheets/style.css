@@ -251,6 +251,8 @@ button, .btn, .btn-cta {
         padding: 0 .5em; }
         .single-expert-profile .expert-profile-block .expert-social li a {
           color: #30A7E9; }
+  .single-expert-profile .expert-company-info {
+    margin: 2em 0; }
 
 .expert-full-content {
   float: left;
