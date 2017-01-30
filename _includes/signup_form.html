@@ -1,0 +1,17 @@
+<form action="https://www.getdrip.com/forms/{{ page.signup_form_drip_id | default: "35553483" }}/submissions" method="post" data-drip-embedded-form="{{ page.signup_form_drip_id | default: "35553483" }}" id="mc-form" class="signup_form">
+  <input type="hidden" data-attr-name="utm_source" name="fields[utm_source]" class="hidden" />
+  <input type="hidden" data-attr-name="utm_medium" name="fields[utm_medium]" class="hidden" />
+  <input type="hidden" data-attr-name="utm_term" name="fields[utm_term]" class="hidden" />
+  <input type="hidden" data-attr-name="utm_content" name="fields[utm_content]" class="hidden" />
+  <input type="hidden" data-attr-name="utm_campaign" name="fields[utm_campaign]" class="hidden" />
+  <input type="hidden" data-attr-name="partner" name="fields[partner]" class="hidden" />
+    <input type="hidden" data-attr-name="origin_page" name="fields[origin_page]" class="hidden" value="{{ page.site }}"/>
+  <div class="form-group">
+    <div class="input-group">
+      <input id="email" type="email" name="fields[email]" class="form-control input-lg" placeholder="Your email address" required id="mc-email" data-parsley-whitespace="trim" {% if page.autofocus %}autofocus="true"{% endif %}>
+      <span class="input-group-btn">
+      <button type="submit" class="btn">{{ page.signup_form_submit_label | default: "Subscribe" }}</button>
+      </span> </div>
+    <p class="input-insurence">Your email is 100% safe. No spam, no advertising.</p>
+  </div>
+</form>

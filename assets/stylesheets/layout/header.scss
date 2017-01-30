@@ -39,3 +39,110 @@
     }
   }
 }
+
+// Application
+
+/*
+Header
+*/
+header{
+  @include media($tablet) {
+    position: absolute;
+    width: 100%;
+  }
+  .logo{
+    height: 6em;
+    float: left;
+    margin: 2em 0;
+  }
+  .menu{
+    display: table;
+    float: right;
+    font-family: 'open_sans_light';
+    margin: 4em 0;
+    padding: 0;
+    @include media($tablet) {
+      display: none;
+    }
+    li{
+      display: inline-block;
+      list-style: none;
+      padding: 0 1.2em;
+      a{
+        color: $font-default;
+        text-decoration: none;
+      }
+      .btn-cta{
+        background: $lw-blue;
+        color: $font-white;
+        padding: .65em 1em;
+      }
+    }
+  }
+}
+
+#sidebartoggle{
+  display: none;
+  &:checked + header{
+    .menu{
+      -webkit-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      display: block;
+      background: $font-white;
+      height: 100vh;
+      margin: 0;
+      padding: 1em;
+      position: fixed;
+      right: 0;
+      top: 0;
+      width: 180px;
+      z-index: 2;
+      li{
+        display: block;
+        padding: 1em;
+      }
+      .btn-cta{
+        color: $font-white;
+        &:hover{
+          color: $font-white;
+        }
+      }
+      a{
+        color: $font-default;
+        display: block;
+        &:hover{
+          color: $lw-blue;
+        }
+      }
+    }
+  }
+}
+
+.sidebartogle-button{
+  display: none;
+  @include media($tablet) {
+    display: block;
+    text-align: right;
+  }
+  .btn-menu{
+    height: 3em;
+    margin: 2.5em 0;
+  }
+}
+
+/*
+Banner
+*/
+.banner{
+  padding: 1em 0 8em;
+  @include media($tablet) {
+    padding: 12em 0 3em;
+  }
+  h1{
+    margin: .35em;
+    @include media($mobile) {
+      padding: 0 .5em;
+    }
+  }
+}

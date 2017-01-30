@@ -170,3 +170,65 @@
     }
   }
 }
+
+/*
+Pricing
+*/
+.pricing{
+  background: $lw-blue;
+  color: $font-white;
+  padding: 2em 0;
+  text-align: center;
+  // border-bottom: 5px solid white;
+  .pricing-box{
+    @include span-columns(4);
+    @include shift(4);
+    background: $font-white;
+    color: $font-default;
+    padding: 2em 3em;
+    @include media($tablet) {
+      @include span-columns(6);
+      @include shift(3);
+    }
+    @include media($mobile) {
+      @include span-columns(12);
+      @include shift(0);
+    }
+    h4{
+      color: $lw-black;
+    }
+    h3{
+      color: $lw-blue;
+      margin: 0 0 .5em;
+      span{
+        font-size: .6em;
+      }
+    }
+    .btn{
+      background: $lw-cta;
+      color: $lw-black;
+      margin: .5em 0;
+    }
+    p{
+      text-align: left;
+      i{
+        color: $lw-blue;
+      }
+    }
+  }
+}
+.form-group{
+  .parsley-errors-list{
+    list-style: none;
+    padding: 0;
+    color: red;
+  }
+  input:focus{
+    .parsley-error{
+      border: 1px solid red;
+    }
+  }
+  .input-insurence{
+    font-size: .8em;
+  }
+}
