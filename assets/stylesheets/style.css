@@ -237,12 +237,13 @@ button, .btn, .btn-cta {
     text-align: right;
     width: 50%; }
     .single-expert-profile .expert-profile-block img {
-      border-radius: 50%;
       width: 100%; }
       @media screen and (max-width: 420px) {
         .single-expert-profile .expert-profile-block img {
           width: 100%;
           padding: 0 25%; } }
+    .single-expert-profile .expert-profile-block .expert-avatar {
+      border-radius: 50%; }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
 
