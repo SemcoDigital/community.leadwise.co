@@ -216,6 +216,7 @@ How it Works
     text-align: center;
   }
   section{
+    margin-bottom: 2em;
     @include span-columns(8);
     @include shift(2);
     @include media($mobile) {
@@ -224,26 +225,18 @@ How it Works
       text-align: center;
     }
     span{
-      @include span-columns(2 of 8);
-      img{
-          height: 5em;
-          margin: .5em;
-          float: right;
-      }
-      @include media($mobile) {
-        @include span-columns(12);
-        img{
-          margin: 0;
-          float: none;
-        }
-      }
+      font-family: 'open_sans_bold';
+      text-transform: uppercase;
     }
-    .howworks-txt{
-      @include span-columns(6 of 8);
-      @include media($mobile) {
-        @include span-columns(12);
-      }
+    h4{
+      margin-top: 0;
     }
+    // .howworks-txt{
+    //   @include span-columns(6 of 8);
+    //   @include media($mobile) {
+    //     @include span-columns(12);
+    //   }
+    // }
   }
 }
 

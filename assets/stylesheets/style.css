@@ -431,6 +431,7 @@ How it Works
     color: #30A7E9;
     text-align: center; }
   .howitworks section {
+    margin-bottom: 2em;
     float: left;
     display: block;
     margin-right: 2.35765%;
@@ -449,42 +450,10 @@ How it Works
         .howitworks section:last-child {
           margin-right: 0; } }
     .howitworks section span {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 22.316%; }
-      .howitworks section span:last-child {
-        margin-right: 0; }
-      .howitworks section span img {
-        height: 5em;
-        margin: .5em;
-        float: right; }
-      @media screen and (max-width: 420px) {
-        .howitworks section span {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          .howitworks section span:last-child {
-            margin-right: 0; }
-          .howitworks section span img {
-            margin: 0;
-            float: none; } }
-    .howitworks section .howworks-txt {
-      float: left;
-      display: block;
-      margin-right: 3.57866%;
-      width: 74.10533%; }
-      .howitworks section .howworks-txt:last-child {
-        margin-right: 0; }
-      @media screen and (max-width: 420px) {
-        .howitworks section .howworks-txt {
-          float: left;
-          display: block;
-          margin-right: 2.35765%;
-          width: 100%; }
-          .howitworks section .howworks-txt:last-child {
-            margin-right: 0; } }
+      font-family: 'open_sans_bold';
+      text-transform: uppercase; }
+    .howitworks section h4 {
+      margin-top: 0; }
 
 /*
 Pricing
