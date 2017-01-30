@@ -172,6 +172,74 @@
 }
 
 /*
+About
+*/
+.about-lw-co{
+  background: $lw-blue;
+  color: $font-white;
+  display: table;
+  padding: 3em 0;
+  width: 100%;
+  h3{
+    text-align: center;
+  }
+  .about-col-3{
+    @include span-columns(4);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
+}
+
+/*
+Key Benefits
+*/
+#key-benefits{
+  background: $lw-light-bg;
+}
+
+/*
+How it Works
+*/
+.howitworks{
+  margin: 2em auto;
+  h3{
+    color: $lw-blue;
+    text-align: center;
+  }
+  section{
+    @include span-columns(8);
+    @include shift(2);
+    @include media($mobile) {
+      @include span-columns(12);
+      @include shift(0);
+      text-align: center;
+    }
+    span{
+      @include span-columns(2 of 8);
+      img{
+          height: 5em;
+          margin: .5em;
+          float: right;
+      }
+      @include media($mobile) {
+        @include span-columns(12);
+        img{
+          margin: 0;
+          float: none;
+        }
+      }
+    }
+    .howworks-txt{
+      @include span-columns(6 of 8);
+      @include media($mobile) {
+        @include span-columns(12);
+      }
+    }
+  }
+}
+
+/*
 Pricing
 */
 .pricing{
