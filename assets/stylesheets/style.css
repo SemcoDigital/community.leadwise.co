@@ -383,27 +383,44 @@ About
   width: 100%; }
   .about-lw-co h3 {
     text-align: center; }
-  .about-lw-co .about-col-3 {
+  .about-lw-co .about-col-2 {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
-    .about-lw-co .about-col-3:last-child {
+    width: 48.82117%; }
+    .about-lw-co .about-col-2:last-child {
       margin-right: 0; }
     @media screen and (max-width: 420px) {
-      .about-lw-co .about-col-3 {
+      .about-lw-co .about-col-2 {
         float: left;
         display: block;
         margin-right: 2.35765%;
         width: 100%; }
-        .about-lw-co .about-col-3:last-child {
+        .about-lw-co .about-col-2:last-child {
           margin-right: 0; } }
 
 /*
 Key Benefits
 */
 #key-benefits {
-  background: #EAEAEA; }
+  background: #EAEAEA;
+  padding: 2em 0;
+  text-align: center; }
+  #key-benefits section {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 23.23176%; }
+    #key-benefits section:last-child {
+      margin-right: 0; }
+    @media screen and (max-width: 420px) {
+      #key-benefits section {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 100%; }
+        #key-benefits section:last-child {
+          margin-right: 0; } }
 
 /*
 How it Works

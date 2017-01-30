@@ -183,8 +183,8 @@ About
   h3{
     text-align: center;
   }
-  .about-col-3{
-    @include span-columns(4);
+  .about-col-2{
+    @include span-columns(6);
     @include media($mobile) {
       @include span-columns(12);
     }
@@ -196,6 +196,14 @@ Key Benefits
 */
 #key-benefits{
   background: $lw-light-bg;
+  padding: 2em 0;
+  text-align: center;
+  section{
+    @include span-columns(3);
+    @include media($mobile) {
+      @include span-columns(12);
+    }
+  }
 }
 
 /*
