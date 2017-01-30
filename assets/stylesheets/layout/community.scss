@@ -69,15 +69,16 @@
 
 // Home and Internal Classes
 .expert-name {
-  color: $lw-blue;
+  // color: $lw-blue;
   font-family: 'open_sans_bold';
+  text-transform: uppercase;
 }
 .expert-language {
   font-size: .9em;
   font-style: italic;
 }
 .expert-activity {
-  font-family: 'open_sans_bold';
+  // font-family: 'open_sans_bold';
 }
 
 //Org Designer Ad
@@ -113,6 +114,17 @@
     }
     p {
       margin: .5em;
+    }
+    .expert-social{
+      display: inline-flex;
+      list-style: none;
+      padding: 0;
+      li{
+        padding: 0 .5em;
+        a{
+          color: $lw-blue;
+        }
+      }
     }
   }
 }

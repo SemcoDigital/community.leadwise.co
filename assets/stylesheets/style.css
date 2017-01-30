@@ -204,15 +204,12 @@ button, .btn, .btn-cta {
       text-align: left; }
 
 .expert-name {
-  color: #30A7E9;
-  font-family: 'open_sans_bold'; }
+  font-family: 'open_sans_bold';
+  text-transform: uppercase; }
 
 .expert-language {
   font-size: .9em;
   font-style: italic; }
-
-.expert-activity {
-  font-family: 'open_sans_bold'; }
 
 .org-designer-ad {
   color: #FFFFFF;
@@ -246,6 +243,14 @@ button, .btn, .btn-cta {
       border-radius: 50%; }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
+    .single-expert-profile .expert-profile-block .expert-social {
+      display: inline-flex;
+      list-style: none;
+      padding: 0; }
+      .single-expert-profile .expert-profile-block .expert-social li {
+        padding: 0 .5em; }
+        .single-expert-profile .expert-profile-block .expert-social li a {
+          color: #30A7E9; }
 
 .expert-full-content {
   float: left;
