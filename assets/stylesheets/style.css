@@ -228,6 +228,14 @@ Banner
       .banner h1 {
         padding: 0 .5em; } }
 
+.single-expert-profile .wrap-content,
+.expert-full-content .wrap-content {
+  width: 800px; }
+  @media screen and (max-width: 420px) {
+    .single-expert-profile .wrap-content,
+    .expert-full-content .wrap-content {
+      width: 100%; } }
+
 .expert-map {
   background-image: url("../images/community-map.svg");
   background-repeat: no-repeat;
@@ -312,19 +320,22 @@ Banner
     margin: .5em 0; }
 
 .single-expert-profile {
+  background: #EAEAEA;
+  padding: 2em;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%; }
   .single-expert-profile:last-child {
     margin-right: 0; }
+  .single-expert-profile .expert-name {
+    margin: .5em; }
   .single-expert-profile .expert-profile-block {
-    background: #EAEAEA;
     display: block;
+    float: left;
     margin: 0 auto;
-    padding: 2em;
     text-align: left;
-    width: 50%; }
+    width: 65%; }
     .single-expert-profile .expert-profile-block .expert-avatar {
       border-radius: 50%;
       float: left;
@@ -345,7 +356,7 @@ Banner
         .single-expert-profile .expert-profile-block .expert-social li a {
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
-    margin: 2em 0; }
+    display: table; }
   .single-expert-profile .expert-company-logo {
     height: 3em; }
 
@@ -355,8 +366,7 @@ Banner
   margin-right: 2.35765%;
   width: 100%;
   margin-right: 0;
-  margin-bottom: 4em;
-  padding-right: 10%; }
+  margin-bottom: 4em; }
   .expert-full-content:last-child {
     margin-right: 0; }
   .expert-full-content p {

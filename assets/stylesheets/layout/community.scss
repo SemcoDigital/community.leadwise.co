@@ -1,3 +1,15 @@
+// Grid
+.single-expert-profile,
+.expert-full-content{
+  .wrap-content {
+    width: 800px;
+    @include media($mobile) {
+      width: 100%;
+    }
+  }
+}
+
+
 // Map
 .expert-map {
   background-image: url("../images/community-map.svg");
@@ -69,7 +81,6 @@
 
 // Home and Internal Classes
 .expert-name {
-  // color: $lw-blue;
   font-family: 'open_sans_bold';
   text-transform: uppercase;
 }
@@ -95,14 +106,18 @@
 
 // Single Org Designer
 .single-expert-profile {
+  background: $lw-light-bg;
+  padding: 2em;
   @include span-columns(12);
+  .expert-name{
+    margin: .5em;
+  }
   .expert-profile-block {
-    background: $lw-light-bg;
     display: block;
+    float: left;
     margin: 0 auto;
-    padding: 2em;
     text-align: left;
-    width: 50%;
+    width: 65%;
     .expert-avatar {
       border-radius: 50%;
       float: left;
@@ -129,7 +144,7 @@
     }
   }
   .expert-company-info{
-    margin: 2em 0;
+    display: table;
   }
   .expert-company-logo{
     height: 3em;
@@ -141,7 +156,7 @@
   @include span-columns(12);
   @include omega();
   margin-bottom: 4em;
-  padding-right: 10%;
+  // padding-right: 10%;
   p {
     font-size: 1.2em;
     line-height: 2em;
