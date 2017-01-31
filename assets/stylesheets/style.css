@@ -137,6 +137,12 @@ button, .btn, .btn-cta {
       .main-banner h2 {
         margin-bottom: 20px; } }
 
+.internal-banner {
+  margin: 2em 0;
+  padding: 0; }
+  .internal-banner .logo {
+    margin: 0; }
+
 /*
 Header
 */
@@ -353,6 +359,9 @@ Banner
   padding-right: 10%; }
   .expert-full-content:last-child {
     margin-right: 0; }
+  .expert-full-content p {
+    font-size: 1.2em;
+    line-height: 2em; }
   .expert-full-content .tags span {
     background: #EAEAEA;
     margin-right: 1em;

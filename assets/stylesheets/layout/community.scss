@@ -142,8 +142,9 @@
   @include omega();
   margin-bottom: 4em;
   padding-right: 10%;
-  .community-description {
-    // margin-top: 0;
+  p {
+    font-size: 1.2em;
+    line-height: 2em;
   }
   .tags {
     span {
@@ -161,7 +162,6 @@
     line-height: 4em;
     margin: 0 2em;
   }
-
   .expert-contact-infos{
     border: 1px solid $lw-light-bg;
     padding: 2em;
