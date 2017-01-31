@@ -306,26 +306,28 @@ Banner
     margin: .5em 0; }
 
 .single-expert-profile {
-  background: #EAEAEA;
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 31.76157%; }
+  width: 100%; }
   .single-expert-profile:last-child {
     margin-right: 0; }
   .single-expert-profile .expert-profile-block {
-    float: right;
-    padding: 1em;
-    text-align: right;
+    background: #EAEAEA;
+    display: block;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: left;
     width: 50%; }
-    .single-expert-profile .expert-profile-block img {
-      width: 100%; }
+    .single-expert-profile .expert-profile-block .expert-avatar {
+      border-radius: 50%;
+      float: left;
+      margin: 0 2em;
+      height: 10em; }
       @media screen and (max-width: 420px) {
-        .single-expert-profile .expert-profile-block img {
+        .single-expert-profile .expert-profile-block .expert-avatar {
           width: 100%;
           padding: 0 25%; } }
-    .single-expert-profile .expert-profile-block .expert-avatar {
-      border-radius: 50%; }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
     .single-expert-profile .expert-profile-block .expert-social {
@@ -338,19 +340,19 @@ Banner
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
     margin: 2em 0; }
+  .single-expert-profile .expert-company-logo {
+    height: 3em; }
 
 .expert-full-content {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 65.88078%;
+  width: 100%;
   margin-right: 0;
   margin-bottom: 4em;
   padding-right: 10%; }
   .expert-full-content:last-child {
     margin-right: 0; }
-  .expert-full-content .community-description {
-    margin-top: 0; }
   .expert-full-content .tags span {
     background: #EAEAEA;
     margin-right: 1em;
