@@ -242,12 +242,14 @@ header .menu {
 
 .single-expert-profile .wrap-content,
 .expert-full-content .wrap-content,
-#howitworks .wrap-content {
+#howitworks .wrap-content,
+#pricing .wrap-content {
   width: 800px; }
   @media screen and (max-width: 420px) {
     .single-expert-profile .wrap-content,
     .expert-full-content .wrap-content,
-    #howitworks .wrap-content {
+    #howitworks .wrap-content,
+    #pricing .wrap-content {
       width: 100%; } }
 
 .expert-map {
@@ -594,7 +596,8 @@ Pricing
       text-transform: uppercase; }
   .sample-list h4 {
     color: #30A7E9;
-    font-size: 22px; }
+    font-size: 22px;
+    margin-bottom: 15px; }
   .sample-list ul {
     padding: 5px 0 10px 35px;
     margin: 0;
@@ -608,12 +611,38 @@ Pricing
   .sample-list li {
     margin: 10px 0 0 0; }
 
-#howitworks .wrap-content > div {
+#howitworks .wrap-content > div,
+#pricing .wrap-content > div {
   width: 100%; }
   @media screen and (max-width: 768px) {
-    #howitworks .wrap-content > div {
+    #howitworks .wrap-content > div,
+    #pricing .wrap-content > div {
       width: 100%;
       padding-right: 0;
       margin: 0 0 30px 0; } }
+
+#pricing {
+  background: #30A7E9;
+  color: #fff; }
+  #pricing h3 {
+    color: #fff; }
+  #pricing span {
+    color: rgba(255, 255, 255, 0.7); }
+  #pricing h4 {
+    color: white; }
+  #pricing ul {
+    border-left: 3px solid rgba(255, 255, 255, 0.3); }
+
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 7px 12px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */

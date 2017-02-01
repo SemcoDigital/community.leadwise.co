@@ -1,7 +1,8 @@
 // Grid
 .single-expert-profile,
 .expert-full-content,
-#howitworks {
+#howitworks,
+#pricing {
 
   .wrap-content {
     width: 800px;
@@ -332,7 +333,7 @@ Pricing
 }
 
 
-// How It Works, Key Benefits
+// Sample list (How It Works, Key Benefits)
 
 .sample-list {
   text-align: center;
@@ -379,6 +380,7 @@ Pricing
   h4 {
     color: $lw-blue;
     font-size: 22px;
+    margin-bottom: 15px;
   }
 
   ul {
@@ -402,7 +404,8 @@ Pricing
   }
 }
 
-#howitworks {
+#howitworks,
+#pricing {
 
   .wrap-content > div {
     width: 100%;
@@ -415,3 +418,37 @@ Pricing
   }
 }
 
+#pricing {
+  background: $lw-blue;
+  color: #fff;
+
+  h3 {
+    color: #fff;
+  }
+
+  span {
+    color: rgba(#fff, .7);
+  }
+
+  h4 {
+    color: rgba(#fff, 1);
+  }
+
+
+  ul {
+    border-left: 3px solid rgba(#fff, .3);
+  }
+}
+
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(#fff, .1);
+  border: 1px solid rgba(#fff, .2);
+  padding: 7px 12px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 20px !important;
+}
