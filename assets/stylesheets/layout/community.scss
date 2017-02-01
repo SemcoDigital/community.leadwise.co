@@ -150,6 +150,9 @@
   }
   .expert-company-info{
     display: table;
+    p {
+      margin: .5em;
+    }
   }
   .expert-company-logo{
     height: 3em;

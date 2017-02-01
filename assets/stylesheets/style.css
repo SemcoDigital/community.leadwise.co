@@ -354,6 +354,8 @@ Banner
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
     display: table; }
+    .single-expert-profile .expert-company-info p {
+      margin: .5em; }
   .single-expert-profile .expert-company-logo {
     height: 3em; }
 
