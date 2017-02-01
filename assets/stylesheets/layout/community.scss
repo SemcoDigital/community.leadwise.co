@@ -123,6 +123,9 @@
     margin: 0 auto;
     text-align: left;
     width: 65%;
+    section{
+      display: table;
+    }
     .expert-avatar {
       border-radius: 50%;
       float: left;

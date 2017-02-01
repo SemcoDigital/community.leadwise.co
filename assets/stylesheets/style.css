@@ -346,6 +346,8 @@ header .menu {
     margin: 0 auto;
     text-align: left;
     width: 65%; }
+    .single-expert-profile .expert-profile-block section {
+      display: table; }
     .single-expert-profile .expert-profile-block .expert-avatar {
       border-radius: 50%;
       float: left;
