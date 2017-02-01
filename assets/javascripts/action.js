@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+   $( document ).tooltip();
+
   // scroll links menu
   $(".scroll-link").click(function() {
       var ScrollOffset = $(this).attr('data-soffset');
