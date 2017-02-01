@@ -143,17 +143,19 @@ button, .btn, .btn-cta {
   .internal-banner .logo {
     margin: 0; }
 
-/*
-Header
-*/
 @media screen and (max-width: 768px) {
   header {
     position: absolute;
     width: 100%; } }
 header .logo {
   height: 6em;
-  float: left;
-  margin: 2em 0; }
+  margin: 35px 0 0 0;
+  float: left; }
+  @media screen and (max-width: 768px) {
+    header .logo {
+      width: 120px;
+      height: auto;
+      float: none; } }
 header .menu {
   display: table;
   float: right;
@@ -166,14 +168,26 @@ header .menu {
   header .menu li {
     display: inline-block;
     list-style: none;
-    padding: 0 1.2em; }
+    margin-left: 35px; }
+    @media screen and (max-width: 768px) {
+      header .menu li {
+        margin-left: 0; } }
     header .menu li a {
       color: #95989A;
       text-decoration: none; }
+      header .menu li a:hover {
+        opacity: .8; }
     header .menu li .btn-cta {
       background: #30A7E9;
       color: #FFFFFF;
-      padding: .65em 1em; }
+      line-height: 50px;
+      height: 50px;
+      text-transform: uppercase;
+      font-family: ostrich_sansmedium;
+      font-size: 22px;
+      display: inline-block;
+      letter-spacing: 2px;
+      padding: 0 25px; }
 
 #sidebartoggle {
   display: none; }
@@ -193,9 +207,10 @@ header .menu {
     z-index: 2; }
     #sidebartoggle:checked + header .menu li {
       display: block;
-      padding: 1em; }
+      margin-bottom: 20px; }
     #sidebartoggle:checked + header .menu .btn-cta {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      text-align: center; }
       #sidebartoggle:checked + header .menu .btn-cta:hover {
         color: #FFFFFF; }
     #sidebartoggle:checked + header .menu a {
@@ -208,15 +223,12 @@ header .menu {
   display: none; }
   @media screen and (max-width: 768px) {
     .sidebartogle-button {
-      display: block;
-      text-align: right; } }
+      display: table;
+      float: right; } }
   .sidebartogle-button .btn-menu {
     height: 3em;
     margin: 2.5em 0; }
 
-/*
-Banner
-*/
 .banner {
   padding: 1em 0 8em; }
   @media screen and (max-width: 768px) {
