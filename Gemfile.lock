@@ -131,7 +131,8 @@ PLATFORMS
 DEPENDENCIES
   foreman (= 0.63.0)
   github-pages
+  jekyll-feed
   sass (= 3.4.22)
 
 BUNDLED WITH
-   1.12.5
+   1.13.6
