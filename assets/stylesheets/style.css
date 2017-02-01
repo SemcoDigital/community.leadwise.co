@@ -335,13 +335,7 @@ header .menu {
 
 .single-expert-profile {
   background: #EAEAEA;
-  padding: 2em;
-  float: left;
-  display: block;
-  margin-right: 2.35765%;
-  width: 100%; }
-  .single-expert-profile:last-child {
-    margin-right: 0; }
+  padding: 2em; }
   .single-expert-profile .expert-name {
     margin: .5em; }
   .single-expert-profile .expert-profile-block {
@@ -357,8 +351,9 @@ header .menu {
       height: 10em; }
       @media screen and (max-width: 420px) {
         .single-expert-profile .expert-profile-block .expert-avatar {
-          width: 100%;
-          padding: 0 25%; } }
+          height: inherit;
+          padding: 0;
+          width: 100%; } }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
     .single-expert-profile .expert-profile-block .expert-social {
@@ -371,6 +366,8 @@ header .menu {
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
     display: table; }
+    .single-expert-profile .expert-company-info p {
+      margin: .5em; }
   .single-expert-profile .expert-company-logo {
     height: 3em; }
 
@@ -394,9 +391,17 @@ header .menu {
   .expert-full-content .expert-program-title {
     color: #30A7E9;
     float: left; }
+    @media screen and (max-width: 420px) {
+      .expert-full-content .expert-program-title {
+        float: none; } }
   .expert-full-content .expert-program-link {
     line-height: 4em;
     margin: 0 2em; }
+    @media screen and (max-width: 420px) {
+      .expert-full-content .expert-program-link {
+        line-height: 2em;
+        margin: 0;
+        display: inline-block; } }
   .expert-full-content .expert-contact-infos {
     border: 1px solid #EAEAEA;
     padding: 2em; }
