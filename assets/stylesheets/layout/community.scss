@@ -185,6 +185,13 @@
       border-radius: 4px;
     }
   }
+  .badges{
+    img{
+      float: left;
+      height: 3em;
+      margin-right: 1em;
+    }
+  }
   .expert-program-title {
     color: $lw-blue;
     float: left;

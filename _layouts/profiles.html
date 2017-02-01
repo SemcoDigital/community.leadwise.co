@@ -57,10 +57,13 @@ layout: default
     </p>
     <br>
     <p><b>Badges</b></p>
+    <div class="badges">
     {% for badge in page.badges %}
       <img src="/assets/images/badges/badges-{{ badge }}.svg">
     {% endfor %}
-    <br>
+  </div>
+    <br clear="all">
+
     <p><b>Portfolio of Programs</b></p>
     {% for program in page.programs %}
     <h4 class="expert-program-title">{{ program.name }}</h4>
