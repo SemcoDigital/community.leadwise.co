@@ -6,7 +6,7 @@ title: LeadWise
 <!--Main banner-->
 <section class="main-banner">
   <div class="wrap-content">
-    <img src="assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo">
+    <img src="/assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo">
     <h1>Changemakers shaping the future of work</h1>
     <h2>Explore our international community of changemakers that will help you change how your organization works.</h2>
   </div>
@@ -22,9 +22,9 @@ title: LeadWise
     <p class="community-description">We are organizational designers, independent consultants, intrapreneurs and catalysts of change who believe that work environments should put people first.</p>
 
     {% for profile in site.posts %}
-    <section class="single-expert" style="display:none">
+    <section class="single-expert">
       <div class="single-expert-img">
-        <img src="assets/images/avatar/{{ profile.avatar }}" alt="Expert avatar">
+        <img src="/assets/images/avatar/{{ profile.avatar }}" alt="Expert avatar">
       </div>
       <div class="single-expert-txt">
         <p class="expert-name">{{ profile.name }}</p>
