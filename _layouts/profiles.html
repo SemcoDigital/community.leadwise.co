@@ -14,15 +14,17 @@ layout: default
 
   <div class="expert-profile-block">
     <img src="/assets/images/avatar/{{ page.avatar }}" class="expert-avatar" alt="Expert avatar">
-    <p class="expert-name">{{ page.name }}</p>
-    <p class="expert-activity">{{ page.short_description | default: ""}}</p>
-    <p>{{ page.location }}</p>
-    <p class="expert-language">{{ page.languages | join: ", "}}</p>
-    <ul class="expert-social">
-      <li><a href="" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-      <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-      <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-    </ul>
+    <section>
+      <p class="expert-name">{{ page.name }}</p>
+      <p class="expert-activity">{{ page.short_description | default: ""}}</p>
+      <p>{{ page.location }}</p>
+      <p class="expert-language">{{ page.languages | join: ", "}}</p>
+      <ul class="expert-social">
+        <li><a href="" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+      </ul>
+    </section>
   </div>
 
   <div class="expert-company-info">

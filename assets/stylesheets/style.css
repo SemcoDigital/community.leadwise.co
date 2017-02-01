@@ -245,7 +245,7 @@ header .menu {
 #howitworks .wrap-content,
 #pricing .wrap-content {
   width: 800px; }
-  @media screen and (max-width: 420px) {
+  @media screen and (max-width: 768px) {
     .single-expert-profile .wrap-content,
     .expert-full-content .wrap-content,
     #howitworks .wrap-content,
@@ -346,6 +346,11 @@ header .menu {
     margin: 0 auto;
     text-align: left;
     width: 65%; }
+    @media screen and (max-width: 768px) {
+      .single-expert-profile .expert-profile-block {
+        width: 100%; } }
+    .single-expert-profile .expert-profile-block section {
+      display: table; }
     .single-expert-profile .expert-profile-block .expert-avatar {
       border-radius: 50%;
       float: left;
@@ -354,6 +359,7 @@ header .menu {
       @media screen and (max-width: 420px) {
         .single-expert-profile .expert-profile-block .expert-avatar {
           height: inherit;
+          margin: 0;
           padding: 0;
           width: 100%; } }
     .single-expert-profile .expert-profile-block p {
