@@ -143,17 +143,19 @@ button, .btn, .btn-cta {
   .internal-banner .logo {
     margin: 0; }
 
-/*
-Header
-*/
 @media screen and (max-width: 768px) {
   header {
     position: absolute;
     width: 100%; } }
 header .logo {
   height: 6em;
-  float: left;
-  margin: 2em 0; }
+  margin: 35px 0 0 0;
+  float: left; }
+  @media screen and (max-width: 768px) {
+    header .logo {
+      width: 120px;
+      height: auto;
+      float: none; } }
 header .menu {
   display: table;
   float: right;
@@ -166,14 +168,26 @@ header .menu {
   header .menu li {
     display: inline-block;
     list-style: none;
-    padding: 0 1.2em; }
+    margin-left: 35px; }
+    @media screen and (max-width: 768px) {
+      header .menu li {
+        margin-left: 0; } }
     header .menu li a {
       color: #95989A;
       text-decoration: none; }
+      header .menu li a:hover {
+        opacity: .8; }
     header .menu li .btn-cta {
       background: #30A7E9;
       color: #FFFFFF;
-      padding: .65em 1em; }
+      line-height: 50px;
+      height: 50px;
+      text-transform: uppercase;
+      font-family: ostrich_sansmedium;
+      font-size: 22px;
+      display: inline-block;
+      letter-spacing: 2px;
+      padding: 0 25px; }
 
 #sidebartoggle {
   display: none; }
@@ -193,9 +207,10 @@ header .menu {
     z-index: 2; }
     #sidebartoggle:checked + header .menu li {
       display: block;
-      padding: 1em; }
+      margin-bottom: 20px; }
     #sidebartoggle:checked + header .menu .btn-cta {
-      color: #FFFFFF; }
+      color: #FFFFFF;
+      text-align: center; }
       #sidebartoggle:checked + header .menu .btn-cta:hover {
         color: #FFFFFF; }
     #sidebartoggle:checked + header .menu a {
@@ -208,15 +223,12 @@ header .menu {
   display: none; }
   @media screen and (max-width: 768px) {
     .sidebartogle-button {
-      display: block;
-      text-align: right; } }
+      display: table;
+      float: right; } }
   .sidebartogle-button .btn-menu {
     height: 3em;
     margin: 2.5em 0; }
 
-/*
-Banner
-*/
 .banner {
   padding: 1em 0 8em; }
   @media screen and (max-width: 768px) {
@@ -230,12 +242,14 @@ Banner
 
 .single-expert-profile .wrap-content,
 .expert-full-content .wrap-content,
-#howitworks .wrap-content {
+#howitworks .wrap-content,
+#pricing .wrap-content {
   width: 800px; }
   @media screen and (max-width: 420px) {
     .single-expert-profile .wrap-content,
     .expert-full-content .wrap-content,
-    #howitworks .wrap-content {
+    #howitworks .wrap-content,
+    #pricing .wrap-content {
       width: 100%; } }
 
 .expert-map {
@@ -354,6 +368,8 @@ Banner
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
     display: table; }
+    .single-expert-profile .expert-company-info p {
+      margin: .5em; }
   .single-expert-profile .expert-company-logo {
     height: 3em; }
 
@@ -425,115 +441,6 @@ About
         .about-lw-co .about-col-2:last-child {
           margin-right: 0; } }
 
-/*
-Key Benefits
-*/
-#key-benefits {
-  background: #EAEAEA;
-  padding: 2em 0;
-  text-align: center; }
-  #key-benefits section {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 23.23176%; }
-    #key-benefits section:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 420px) {
-      #key-benefits section {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%; }
-        #key-benefits section:last-child {
-          margin-right: 0; } }
-
-/*
-How it Works
-*/
-.howitworks {
-  margin: 2em auto; }
-  .howitworks h3 {
-    color: #30A7E9;
-    text-align: center; }
-  .howitworks section {
-    margin-bottom: 2em;
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 65.88078%;
-    margin-left: 17.05961%; }
-    .howitworks section:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 420px) {
-      .howitworks section {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%;
-        text-align: center; }
-        .howitworks section:last-child {
-          margin-right: 0; } }
-    .howitworks section span {
-      font-family: 'open_sans_bold';
-      text-transform: uppercase; }
-    .howitworks section h4 {
-      margin-top: 0; }
-
-/*
-Pricing
-*/
-.pricing {
-  background: #30A7E9;
-  color: #FFFFFF;
-  padding: 2em 0;
-  text-align: center; }
-  .pricing .pricing-box {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%;
-    margin-left: 34.11922%;
-    background: #FFFFFF;
-    color: #95989A;
-    padding: 2em 3em; }
-    .pricing .pricing-box:last-child {
-      margin-right: 0; }
-    @media screen and (max-width: 768px) {
-      .pricing .pricing-box {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 48.82117%;
-        margin-left: 25.58941%; }
-        .pricing .pricing-box:last-child {
-          margin-right: 0; } }
-    @media screen and (max-width: 420px) {
-      .pricing .pricing-box {
-        float: left;
-        display: block;
-        margin-right: 2.35765%;
-        width: 100%;
-        margin-left: 0%; }
-        .pricing .pricing-box:last-child {
-          margin-right: 0; } }
-    .pricing .pricing-box h4 {
-      color: #000000; }
-    .pricing .pricing-box h3 {
-      color: #30A7E9;
-      margin: 0 0 .5em; }
-      .pricing .pricing-box h3 span {
-        font-size: .6em; }
-    .pricing .pricing-box .btn {
-      background: #FFCC00;
-      color: #000000;
-      margin: .5em 0; }
-    .pricing .pricing-box p {
-      text-align: left; }
-      .pricing .pricing-box p i {
-        color: #30A7E9; }
-
 .form-group .parsley-errors-list {
   list-style: none;
   padding: 0;
@@ -580,7 +487,8 @@ Pricing
       text-transform: uppercase; }
   .sample-list h4 {
     color: #30A7E9;
-    font-size: 22px; }
+    font-size: 22px;
+    margin-bottom: 15px; }
   .sample-list ul {
     padding: 5px 0 10px 35px;
     margin: 0;
@@ -594,12 +502,41 @@ Pricing
   .sample-list li {
     margin: 10px 0 0 0; }
 
-#howitworks .wrap-content > div {
+#key-benefits {
+  background: #EAEAEA; }
+
+#howitworks .wrap-content > div,
+#pricing .wrap-content > div {
   width: 100%; }
   @media screen and (max-width: 768px) {
-    #howitworks .wrap-content > div {
+    #howitworks .wrap-content > div,
+    #pricing .wrap-content > div {
       width: 100%;
       padding-right: 0;
       margin: 0 0 30px 0; } }
+
+#pricing {
+  background: #30A7E9;
+  color: #fff; }
+  #pricing h3 {
+    color: #fff; }
+  #pricing span {
+    color: rgba(255, 255, 255, 0.7); }
+  #pricing h4 {
+    color: white; }
+  #pricing ul {
+    border-left: 3px solid rgba(255, 255, 255, 0.3); }
+
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 7px 12px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */

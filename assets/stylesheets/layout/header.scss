@@ -48,50 +48,76 @@
   }
 }
 
-// Application
 
-/*
-Header
-*/
-header{
+header {
+
   @include media($tablet) {
     position: absolute;
     width: 100%;
   }
-  .logo{
+
+  .logo {
     height: 6em;
+    margin: 35px 0 0 0;
     float: left;
-    margin: 2em 0;
+
+    @include media($tablet) {
+      width: 120px;
+      height: auto;
+      float: none;
+    }
   }
-  .menu{
+
+  .menu {
     display: table;
     float: right;
     font-family: 'open_sans_light';
     margin: 4em 0;
     padding: 0;
+
     @include media($tablet) {
       display: none;
     }
-    li{
+
+    li {
       display: inline-block;
       list-style: none;
-      padding: 0 1.2em;
-      a{
+      margin-left: 35px;
+
+      @include media($tablet) {
+        margin-left: 0;
+      }
+
+      a {
         color: $font-default;
         text-decoration: none;
+
+        &:hover {
+          opacity: .8;
+        }
       }
-      .btn-cta{
+
+      .btn-cta {
         background: $lw-blue;
         color: $font-white;
-        padding: .65em 1em;
+        line-height: 50px;
+        height: 50px;
+        text-transform: uppercase;
+        font-family: ostrich_sansmedium;
+        font-size: 22px;
+        display: inline-block;
+        letter-spacing: 2px;
+        padding: 0 25px;
       }
     }
   }
 }
 
-#sidebartoggle{
+#sidebartoggle {
   display: none;
+
   &:checked + header{
+
     .menu{
       -webkit-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
       -moz-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
@@ -106,20 +132,26 @@ header{
       top: 0;
       width: 180px;
       z-index: 2;
-      li{
+
+      li {
         display: block;
-        padding: 1em;
+        margin-bottom: 20px;
       }
-      .btn-cta{
+
+      .btn-cta {
         color: $font-white;
-        &:hover{
+        text-align: center;
+
+        &:hover {
           color: $font-white;
         }
       }
-      a{
+
+      a {
         color: $font-default;
         display: block;
-        &:hover{
+
+        &:hover {
           color: $lw-blue;
         }
       }
@@ -127,21 +159,23 @@ header{
   }
 }
 
-.sidebartogle-button{
+.sidebartogle-button {
   display: none;
+
   @include media($tablet) {
-    display: block;
-    text-align: right;
+    display: table;
+    float: right;
   }
-  .btn-menu{
+
+  .btn-menu {
     height: 3em;
     margin: 2.5em 0;
   }
 }
 
-/*
-Banner
-*/
+
+// Banner
+
 .banner{
   padding: 1em 0 8em;
   @include media($tablet) {

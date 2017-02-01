@@ -1,7 +1,8 @@
 // Grid
 .single-expert-profile,
 .expert-full-content,
-#howitworks {
+#howitworks,
+#pricing {
 
   .wrap-content {
     width: 800px;
@@ -150,6 +151,9 @@
   }
   .expert-company-info{
     display: table;
+    p {
+      margin: .5em;
+    }
   }
   .expert-company-logo{
     height: 3em;
@@ -223,113 +227,27 @@ About
   }
 }
 
-/*
-Key Benefits
-*/
-#key-benefits{
-  background: $lw-light-bg;
-  padding: 2em 0;
-  text-align: center;
-  section{
-    @include span-columns(3);
-    @include media($mobile) {
-      @include span-columns(12);
-    }
-  }
-}
+.form-group {
 
-/*
-How it Works
-*/
-.howitworks{
-  margin: 2em auto;
-  h3{
-    color: $lw-blue;
-    text-align: center;
-  }
-  section{
-    margin-bottom: 2em;
-    @include span-columns(8);
-    @include shift(2);
-    @include media($mobile) {
-      @include span-columns(12);
-      @include shift(0);
-      text-align: center;
-    }
-    span{
-      font-family: 'open_sans_bold';
-      text-transform: uppercase;
-    }
-    h4{
-      margin-top: 0;
-    }
-  }
-}
-
-/*
-Pricing
-*/
-.pricing{
-  background: $lw-blue;
-  color: $font-white;
-  padding: 2em 0;
-  text-align: center;
-  // border-bottom: 5px solid white;
-  .pricing-box{
-    @include span-columns(4);
-    @include shift(4);
-    background: $font-white;
-    color: $font-default;
-    padding: 2em 3em;
-    @include media($tablet) {
-      @include span-columns(6);
-      @include shift(3);
-    }
-    @include media($mobile) {
-      @include span-columns(12);
-      @include shift(0);
-    }
-    h4{
-      color: $lw-black;
-    }
-    h3{
-      color: $lw-blue;
-      margin: 0 0 .5em;
-      span{
-        font-size: .6em;
-      }
-    }
-    .btn{
-      background: $lw-cta;
-      color: $lw-black;
-      margin: .5em 0;
-    }
-    p{
-      text-align: left;
-      i{
-        color: $lw-blue;
-      }
-    }
-  }
-}
-.form-group{
-  .parsley-errors-list{
+  .parsley-errors-list {
     list-style: none;
     padding: 0;
     color: red;
   }
-  input:focus{
-    .parsley-error{
+
+  input:focus {
+    .parsley-error {
       border: 1px solid red;
     }
   }
-  .input-insurence{
+
+  .input-insurence {
     font-size: .8em;
   }
 }
 
 
-// How It Works, Key Benefits
+// Sample list (How It Works, Key Benefits)
 
 .sample-list {
   text-align: center;
@@ -376,6 +294,7 @@ Pricing
   h4 {
     color: $lw-blue;
     font-size: 22px;
+    margin-bottom: 15px;
   }
 
   ul {
@@ -399,7 +318,12 @@ Pricing
   }
 }
 
-#howitworks {
+#key-benefits {
+  background: $lw-light-bg;
+}
+
+#howitworks,
+#pricing {
 
   .wrap-content > div {
     width: 100%;
@@ -412,3 +336,37 @@ Pricing
   }
 }
 
+#pricing {
+  background: $lw-blue;
+  color: #fff;
+
+  h3 {
+    color: #fff;
+  }
+
+  span {
+    color: rgba(#fff, .7);
+  }
+
+  h4 {
+    color: rgba(#fff, 1);
+  }
+
+
+  ul {
+    border-left: 3px solid rgba(#fff, .3);
+  }
+}
+
+.note-phrase {
+  text-transform: uppercase;
+  font-family: open_sans_bold;
+  font-size: 12px !important;
+  line-height: 20px !important;
+  background: rgba(#fff, .1);
+  border: 1px solid rgba(#fff, .2);
+  padding: 7px 12px;
+  text-align: center;
+  letter-spacing: 0;
+  margin-top: 20px !important;
+}

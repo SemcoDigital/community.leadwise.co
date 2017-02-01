@@ -1,29 +1,78 @@
 ---
 layout: default
 ---
-<div>
-   <section>
-       <img src="/assets/images/avatar/{{ page.avatar }}" alt="{{ page.name }}">
-       <h3> {{ page.name }} </h3>
-   </section>
+<!--Main banner-->
+<section class="main-banner internal-banner">
+  <div class="wrap-content">
+    <img src="assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo">
+  </div>
+</section>
 
-   <section>
-       <strong> Badges: </strong>
-       {% for badge in page.badges %}
-       <i class="fa {{ badge }} fa-2x"></i>
-       {% endfor %}
-   </section>
+<!--Single Org Designer Profile-->
+<section class="single-expert-profile">
+  <div class="wrap-content">
 
-   <section>
-       <strong> Bio: </strong> {{ page.bio }}
-   </section>
+  <div class="expert-profile-block">
+    <img src="/assets/images/avatar/{{ page.avatar }}" class="expert-avatar" alt="Expert avatar">
+    <p class="expert-name">{{ page.name }}</p>
+    <p class="expert-activity">{{ page.short_description | default: ""}}</p>
+    <p>{{ page.location }}</p>
+    <p class="expert-language">{{ page.languages | join: ", "}}</p>
+    <ul class="expert-social">
+      <li><a href="" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
 
-   <section>
-       <strong>Testemonials </strong>
-       {% for testemonial in page.testemonials %}
-          {{ testemonial.name }}
+  <div class="expert-company-info">
+    {% if page.company %}
+    {% assign company_infos = page.company[0]%}
+      <p class="expert-name">Company</p>
+      <section>
+        <img src="/assets/images/{{ company_infos.logo }}" alt="Company Logo" class="expert-company-logo">
+      </section>
+      <p>{{ company_infos.name }}</p>
+      <p><a href="{{ page.company.website }}">{{ company_infos.website }}</a></p>
+    {% endif %}
+      <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
+      <p><a href="tel:{{ page.phone }}">{{ page.phone }}</a></input></p>
+      <a href="" class="btn">Contact Now</a>
+  </div>
 
-       {% endfor %}
-  </section>       
+  </div>
+</section>
 
+<!--Single Org Designer Content-->
+<div class="expert-full-content">
+  <div class="wrap-content">
+    {{ page.bio }}
+    <p><b>Expertise</b></p>
+    <p class="tags">
+      {% for expertise in page.expertises %}
+        <span>{{ expertise }}</span>
+      {% endfor %}
+    </p>
+    <br>
+    <p><b>Badges</b></p>
+    {% for badge in page.badges %}
+      <i class="fa {{ badge }} fa-5x" aria-hidden="true"></i>
+    {% endfor %}
+    <br>
+    <p><b>Portfolio of Programs</b></p>
+    {% for program in page.programs %}
+    <h4 class="expert-program-title">{{ program.name }}</h4>
+    <p><a href="{{ program.link }}" class="expert-program-link">Learn more</a></p>
+    {% endfor %}
+  </div>
 </div>
+
+
+<br clear="all">
+
+<!--Org Designer Ad-->
+<section class="org-designer-ad">
+  <h3>Are you an organizational designer?</h3>
+  <p>Join our community and be connected to companies ready to change how they work.</p>
+  <a href="" class="btn-cta">APPLY NOW</a>
+</section>

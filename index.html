@@ -21,58 +21,20 @@ title: LeadWise
     <h3>Explore our community</h3>
     <p class="community-description">We are organizational designers, independent consultants, intrapreneurs and catalysts of change who believe that work environments should put people first.</p>
 
-    <section class="single-expert">
+    {% for profile in site.posts %}
+    <section class="single-expert" style="display:none">
       <div class="single-expert-img">
-        <img src="assets/images/avatar/avatar-1.jpg" alt="Expert avatar">
+        <img src="assets/images/avatar/{{ profile.avatar }}" alt="Expert avatar">
       </div>
       <div class="single-expert-txt">
-        <p class="expert-name">Maria da Silva</p>
-        <p class="expert-activity">Short title of what this person do</p>
-        <p>São Paulo, Brazil</p>
-        <p class="expert-language">English, Portugueses, Corean</p>
-        <p><a href="/single-org-designer.html">View full profile</a></p>
+        <p class="expert-name">{{ profile.name }}</p>
+        <p class="expert-activity">{{ profile.short_description }}</p>
+        <p>{{ profile.location }}</p>
+        <p class="expert-language">{{ profile.languages | join: ", "}}</p>
+        <p><a href="{{ profile.url }}">View full profile</a></p>
       </div>
     </section>
-
-    <section class="single-expert">
-      <div class="single-expert-img">
-        <img src="assets/images/avatar/avatar-1.jpg" alt="Expert avatar">
-      </div>
-      <div class="single-expert-txt">
-        <p class="expert-name">Maria da Silva</p>
-        <p class="expert-activity">Short title of what this person do</p>
-        <p>São Paulo, Brazil</p>
-        <p class="expert-language">English, Portugueses, Corean</p>
-        <p><a href="/single-org-designer.html">View full profile</a></p>
-      </div>
-    </section>
-
-    <section class="single-expert">
-      <div class="single-expert-img">
-        <img src="assets/images/avatar/avatar-1.jpg" alt="Expert avatar">
-      </div>
-      <div class="single-expert-txt">
-        <p class="expert-name">Maria da Silva</p>
-        <p class="expert-activity">Short title of what this person do</p>
-        <p>São Paulo, Brazil</p>
-        <p class="expert-language">English, Portugueses, Corean</p>
-        <p><a href="/single-org-designer.html">View full profile</a></p>
-      </div>
-    </section>
-
-    <section class="single-expert">
-      <div class="single-expert-img">
-        <img src="assets/images/avatar/avatar-1.jpg" alt="Expert avatar">
-      </div>
-      <div class="single-expert-txt">
-        <p class="expert-name">Maria da Silva</p>
-        <p class="expert-activity">Short title of what this person do</p>
-        <p>São Paulo, Brazil</p>
-        <p class="expert-language">English, Portugueses, Corean</p>
-        <p><a href="/single-org-designer.html">View full profile</a></p>
-      </div>
-    </section>
-
+    {% endfor %}
   </div>
 </section>
 
