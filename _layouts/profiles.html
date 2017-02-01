@@ -59,7 +59,7 @@ layout: default
     <p><b>Badges</b></p>
     <div class="badges">
     {% for badge in page.badges %}
-      <img src="/assets/images/badges/badges-{{ badge }}.svg">
+      <img src="/assets/images/badges/badges-{{ badge }}.svg" title="{{ badge | capitalize}}">
     {% endfor %}
   </div>
     <br clear="all">
