@@ -112,7 +112,7 @@
 .single-expert-profile {
   background: $lw-light-bg;
   padding: 2em;
-  @include span-columns(12);
+  // @include span-columns(12);
   .expert-name{
     margin: .5em;
   }
@@ -128,8 +128,9 @@
       margin: 0 2em;
       height: 10em;
       @include media($mobile) {
+        height: inherit;
+        padding: 0;
         width: 100%;
-        padding: 0 25%;
       }
     }
     p {
@@ -176,10 +177,18 @@
   .expert-program-title {
     color: $lw-blue;
     float: left;
+    @include media($mobile) {
+      float: none;
+    }
   }
   .expert-program-link {
     line-height: 4em;
     margin: 0 2em;
+    @include media($mobile) {
+      line-height: 2em;
+      margin: 0;
+      display: inline-block;
+    }
   }
   .expert-contact-infos{
     border: 1px solid $lw-light-bg;
