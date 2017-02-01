@@ -4,7 +4,7 @@ layout: default
 <!--Main banner-->
 <section class="main-banner internal-banner">
   <div class="wrap-content">
-    <img src="assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo">
+    <img src="/assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo">
   </div>
 </section>
 
@@ -57,10 +57,15 @@ layout: default
     </p>
     <br>
     <p><b>Badges</b></p>
-    {% for badge in page.badges %}
+    <div class="badges">
+      <img src="/assets/images/badges/badges-holacracy.svg" alt="">
+      <img src="/assets/images/badges/badges-lean.svg" alt="">
+      <img src="/assets/images/badges/badges-semco-style.svg" alt="">
+    </div>
+    <!--{% for badge in page.badges %}
       <i class="fa {{ badge }} fa-5x" aria-hidden="true"></i>
-    {% endfor %}
-    <br>
+    {% endfor %}-->
+    <br clear="all">
     <p><b>Portfolio of Programs</b></p>
     {% for program in page.programs %}
     <h4 class="expert-program-title">{{ program.name }}</h4>

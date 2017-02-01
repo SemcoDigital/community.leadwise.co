@@ -396,6 +396,10 @@ header .menu {
     margin-right: 1em;
     padding: .2em .5em;
     border-radius: 4px; }
+  .expert-full-content .badges img {
+    float: left;
+    height: 3em;
+    margin-right: 1em; }
   .expert-full-content .expert-program-title {
     color: #30A7E9;
     float: left; }
