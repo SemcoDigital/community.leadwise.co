@@ -241,6 +241,11 @@ header .menu {
       .banner h1 {
         padding: 0 .5em; } }
 
+.banner-application {
+  background: #fff url(../images/banner-bg.jpg) 0 -90px;
+  background-size: cover;
+  padding: 1em 0 4em; }
+
 .single-expert-profile .wrap-content,
 .expert-full-content .wrap-content,
 #howitworks .wrap-content,
