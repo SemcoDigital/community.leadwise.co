@@ -65,10 +65,16 @@
     @include span-columns(12);
   }
   .single-expert-img {
+    float: left;
+    width: 35%;
+    @include media($tablet) {
+      width: 100%;
+    }
     img {
       border-radius: 50%;
       float: left;
-      width: 30%;
+      padding: 0 1em;
+      width: 100%;
       @include media($mobile) {
         width: 100%;
         padding: 0 25%;
@@ -76,7 +82,7 @@
     }
   }
   .single-expert-txt {
-    display: inline-block;
+    display: table;
     p {
       margin: .5em 0;
       text-align: left;

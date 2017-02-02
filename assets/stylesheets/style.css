@@ -305,16 +305,23 @@ header .menu {
       width: 100%; }
       .single-expert:last-child {
         margin-right: 0; } }
-  .single-expert .single-expert-img img {
-    border-radius: 50%;
+  .single-expert .single-expert-img {
     float: left;
-    width: 30%; }
-    @media screen and (max-width: 420px) {
-      .single-expert .single-expert-img img {
-        width: 100%;
-        padding: 0 25%; } }
+    width: 35%; }
+    @media screen and (max-width: 768px) {
+      .single-expert .single-expert-img {
+        width: 100%; } }
+    .single-expert .single-expert-img img {
+      border-radius: 50%;
+      float: left;
+      padding: 0 1em;
+      width: 100%; }
+      @media screen and (max-width: 420px) {
+        .single-expert .single-expert-img img {
+          width: 100%;
+          padding: 0 25%; } }
   .single-expert .single-expert-txt {
-    display: inline-block; }
+    display: table; }
     .single-expert .single-expert-txt p {
       margin: .5em 0;
       text-align: left; }
