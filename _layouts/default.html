@@ -20,6 +20,11 @@
     <script src="/assets/javascripts/action.js"></script>
     <script src="http://www.leadwise.co/assets/javascripts/topbar.js"></script>
     <script src="http://www.leadwise.co/assets/javascripts/footer.js"></script>
+
+    {% if page.show_widget %}
+    <script src="http://www.leadwise.co/assets/javascripts/widget.js"></script>
+    {% endif %}
+
   {% include tracking.html %}
 </body>
 
