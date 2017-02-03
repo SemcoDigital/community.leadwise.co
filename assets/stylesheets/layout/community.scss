@@ -235,10 +235,16 @@ About
   background: $lw-blue;
   color: $font-white;
   display: table;
-  padding: 3em 0;
+  padding: 20px 0;
   width: 100%;
-  h3{
+  h3 {
     text-align: center;
+    margin-bottom: 50px;
+
+    @include media($tablet) {
+      font-size: 26px;
+      margin-bottom: 30px;
+    }
   }
   .about-col-2{
     @include span-columns(6);
