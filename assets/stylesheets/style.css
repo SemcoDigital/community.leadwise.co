@@ -111,14 +111,13 @@ button, .btn, .btn-cta {
 
 .main-banner {
   text-align: center;
-  background: #fff url("../images/banner-bg.jpg") 0 -50px;
+  background: #fff;
   background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 200px; }
+  padding-bottom: 40px; }
   @media screen and (max-width: 768px) {
     .main-banner {
-      padding-bottom: 40px;
       background-position: 0 0; }
       .main-banner br {
         display: none; } }

@@ -2,14 +2,13 @@
 
 .main-banner {
   text-align: center;
-  background: #fff url("../images/banner-bg.jpg") 0 -50px;
+  background: #fff;
   background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 200px;
+  padding-bottom: 40px;
 
   @include media($tablet) {
-    padding-bottom: 40px;
     background-position: 0 0;
 
     br {
