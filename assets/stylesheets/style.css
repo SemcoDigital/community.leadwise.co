@@ -111,38 +111,36 @@ button, .btn, .btn-cta {
 
 .main-banner {
   text-align: center;
+  background: #fff url("../images/banner-bg.jpg") 0 -50px;
+  background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 4em; }
-  @media screen and (max-width: 420px) {
+  padding-bottom: 200px; }
+  @media screen and (max-width: 768px) {
     .main-banner {
-      padding-bottom: 2em; } }
-  .main-banner .logo {
-    width: 200px;
-    margin: 70px 0 0 0; }
-    @media screen and (max-width: 420px) {
-      .main-banner .logo {
-        width: 140px;
-        margin: 30px 0 0 0; } }
+      padding-bottom: 40px;
+      background-position: 0 0; }
+      .main-banner br {
+        display: none; } }
   .main-banner h1 {
-    margin: 65px 0 15px 0; }
-    @media screen and (max-width: 420px) {
+    margin: 65px 0 25px 0; }
+    @media screen and (max-width: 768px) {
       .main-banner h1 {
         font-size: 40px;
-        margin-top: 25px; } }
+        line-height: 40px;
+        margin: 130px 0 -5px 0;
+        background: #fff;
+        padding: 10px; } }
   .main-banner h2 {
     font-weight: bold;
     color: #95989A;
     letter-spacing: .02em; }
-    @media screen and (max-width: 420px) {
+    @media screen and (max-width: 768px) {
       .main-banner h2 {
-        margin-bottom: 20px; } }
-
-.internal-banner {
-  margin: 2em 0;
-  padding: 0; }
-  .internal-banner .logo {
-    margin: 0; }
+        font-size: 20px;
+        line-height: 23px;
+        padding: 0 20px 20px 20px;
+        background: #fff; } }
 
 @media screen and (max-width: 768px) {
   header {
@@ -229,22 +227,6 @@ header .menu {
   .sidebartogle-button .btn-menu {
     height: 3em;
     margin: 2.5em 0; }
-
-.banner {
-  padding: 1em 0 8em; }
-  @media screen and (max-width: 768px) {
-    .banner {
-      padding: 12em 0 3em; } }
-  .banner h1 {
-    margin: .35em; }
-    @media screen and (max-width: 420px) {
-      .banner h1 {
-        padding: 0 .5em; } }
-
-.banner-application {
-  background: #fff url(../images/banner-bg.jpg) 0 -90px;
-  background-size: cover;
-  padding: 1em 0 4em; }
 
 .single-expert-profile .wrap-content,
 .expert-full-content .wrap-content,
