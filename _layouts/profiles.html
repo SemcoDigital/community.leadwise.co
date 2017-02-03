@@ -42,6 +42,19 @@ layout: default
             <p>{{ badge | capitalize}}</p>
           </div>
         </div>
+
+        <!--modal for badges-->
+        <div id="openModal" class="modalDialog">
+          <div>
+            <a title="Close" class="close">X</a>
+            <div class="modal-body">
+              <div id="teal" class="information">
+                  {% include 7-movements-teal.html %}
+              </div>
+            </div>
+          </div>
+        </div>
+
         {% endfor %}
       </div>
     </section>
