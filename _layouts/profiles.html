@@ -1,12 +1,21 @@
 ---
 layout: default
 ---
-<!--Main banner-->
-<section class="main-banner internal-banner">
+
+<!--Header-->
+<header>
   <div class="wrap-content">
-    <a href="http://community.leadwise.co/"><img src="/assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo"></a>
+    <img src="assets/images/logo-leadwise-community.svg" alt="LeadWise Community" class="logo">
+    <label for="sidebartoggle" class="sidebartogle-button">
+      <img class="btn-menu" src="assets/images/icon-menu.svg" alt="menu">
+    </label>
+    <ul class="menu">
+      <li><a class="scroll-link" data-soffset="0" href="/#explore-community">Explore our Community</a></li>
+      <li><a class="scroll-link" data-soffset="0" href="/application">Become a LeadWise Org Designer</a></li>
+      <!--<li><a class="scroll-link btn-cta" data-soffset="0" href="/application">Become a LeadWise Org Designer</a></li>-->
+    </ul>
   </div>
-</section>
+</header>
 
 <!--Single Org Designer Profile-->
 <section class="single-expert-profile">
@@ -24,6 +33,17 @@ layout: default
         <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
       </ul>
+      <p class="expert-badges">Badges</p>
+      <div class="badges">
+        {% for badge in page.badges %}
+        <div class="tooltip-item">
+          <img src="/assets/images/badges/badges-{{ badge }}.svg">
+          <div class="tooltip">
+            <p>{{ badge | capitalize}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </section>
   </div>
 
@@ -56,17 +76,17 @@ layout: default
       {% endfor %}
     </p>
     <br>
-    <p><b>Badges</b></p>
+    <!--<p><b>Badges</b></p>
     <div class="badges">
-    {% for badge in page.badges %}
-    <div class="tooltip-item">
-      <img src="/assets/images/badges/badges-{{ badge }}.svg">
-      <div class="tooltip">
-        <p>{{ badge | capitalize}}</p>
+      {% for badge in page.badges %}
+      <div class="tooltip-item">
+        <img src="/assets/images/badges/badges-{{ badge }}.svg">
+        <div class="tooltip">
+          <p>{{ badge | capitalize}}</p>
+        </div>
       </div>
-    </div>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>-->
     <br clear="all">
 
     <p><b>Portfolio of Programs</b></p>

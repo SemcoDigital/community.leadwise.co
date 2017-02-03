@@ -1,83 +1,95 @@
 // Main banner
+
 .main-banner {
   text-align: center;
+  background: #fff;
+  background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 4em;
-  @include media($mobile) {
-    padding-bottom: 2em;
-  }
-  .logo {
-    width: 200px;
-    margin: 70px 0 0 0;
-    @include media($mobile) {
-      width: 140px;
-      margin: 30px 0 0 0;
+  padding-bottom: 40px;
+
+  @include media($tablet) {
+    background-position: 0 0;
+
+    br {
+      display: none;
     }
   }
+
   h1 {
-    margin: 65px 0 15px 0;
-    @include media($mobile) {
+    margin: 55px 0 0 0;
+
+    @include media($tablet) {
       font-size: 40px;
-      margin-top: 25px;
+      line-height: 40px;
+      margin: 130px 0 -5px 0;
+      background: #fff;
+      padding: 10px;
     }
   }
+
   h2 {
     font-weight: bold;
     color: $font-lw-light-bg;
     letter-spacing: .02em;
-    @include media($mobile) {
-      margin-bottom: 20px;
+    margin-bottom: 20px;
+
+    @include media($tablet) {
+      font-size: 20px;
+      line-height: 23px;
     }
   }
 }
 
-.internal-banner {
-  margin: 2em 0;
-  padding: 0;
-  .logo {
-    margin: 0;
-  }
-}
 
 header {
+
   @include media($tablet) {
     position: absolute;
     width: 100%;
   }
+
   .logo {
     height: 6em;
     margin: 35px 0 0 0;
     float: left;
+
     @include media($tablet) {
       width: 120px;
       height: auto;
       float: none;
     }
   }
+
   .menu {
     display: table;
     float: right;
     font-family: 'open_sans_light';
     margin: 4em 0;
     padding: 0;
+
     @include media($tablet) {
       display: none;
     }
+
     li {
       display: inline-block;
       list-style: none;
       margin-left: 35px;
+
       @include media($tablet) {
         margin-left: 0;
       }
+
       a {
         color: $font-default;
         text-decoration: none;
+
         &:hover {
           opacity: .8;
         }
       }
+
       .btn-cta {
         background: $lw-blue;
         color: $font-white;
@@ -94,13 +106,18 @@ header {
   }
 }
 
+
+// Internal responsive
+
 #sidebartoggle {
   display: none;
-  &:checked+header {
-    .menu {
-      -webkit-box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.75);
-      -moz-box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.75);
-      box-shadow: -2px 0px 15px 0px rgba(0, 0, 0, 0.75);
+
+  &:checked + header{
+
+    .menu{
+      -webkit-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
+      box-shadow: -2px 0px 15px 0px rgba(0,0,0,0.75);
       display: block;
       background: $font-white;
       height: 100vh;
@@ -111,20 +128,25 @@ header {
       top: 0;
       width: 180px;
       z-index: 2;
+
       li {
         display: block;
         margin-bottom: 20px;
       }
+
       .btn-cta {
         color: $font-white;
         text-align: center;
+
         &:hover {
           color: $font-white;
         }
       }
+
       a {
         color: $font-default;
         display: block;
+
         &:hover {
           color: $lw-blue;
         }
@@ -135,32 +157,14 @@ header {
 
 .sidebartogle-button {
   display: none;
+
   @include media($tablet) {
     display: table;
     float: right;
   }
+
   .btn-menu {
     height: 3em;
     margin: 2.5em 0;
   }
-}
-
-// Banner
-.banner {
-  padding: 1em 0 8em;
-  @include media($tablet) {
-    padding: 12em 0 3em;
-  }
-  h1 {
-    margin: .35em;
-    @include media($mobile) {
-      padding: 0 .5em;
-    }
-  }
-}
-
-.banner-application {
-  background: #fff url(../images/banner-bg.jpg) 0 -90px;
-  background-size: cover;
-  padding: 1em 0 4em;
 }

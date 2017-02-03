@@ -111,38 +111,34 @@ button, .btn, .btn-cta {
 
 .main-banner {
   text-align: center;
+  background: #fff;
+  background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 4em; }
-  @media screen and (max-width: 420px) {
+  padding-bottom: 40px; }
+  @media screen and (max-width: 768px) {
     .main-banner {
-      padding-bottom: 2em; } }
-  .main-banner .logo {
-    width: 200px;
-    margin: 70px 0 0 0; }
-    @media screen and (max-width: 420px) {
-      .main-banner .logo {
-        width: 140px;
-        margin: 30px 0 0 0; } }
+      background-position: 0 0; }
+      .main-banner br {
+        display: none; } }
   .main-banner h1 {
-    margin: 65px 0 15px 0; }
-    @media screen and (max-width: 420px) {
+    margin: 55px 0 0 0; }
+    @media screen and (max-width: 768px) {
       .main-banner h1 {
         font-size: 40px;
-        margin-top: 25px; } }
+        line-height: 40px;
+        margin: 130px 0 -5px 0;
+        background: #fff;
+        padding: 10px; } }
   .main-banner h2 {
     font-weight: bold;
     color: #95989A;
-    letter-spacing: .02em; }
-    @media screen and (max-width: 420px) {
+    letter-spacing: .02em;
+    margin-bottom: 20px; }
+    @media screen and (max-width: 768px) {
       .main-banner h2 {
-        margin-bottom: 20px; } }
-
-.internal-banner {
-  margin: 2em 0;
-  padding: 0; }
-  .internal-banner .logo {
-    margin: 0; }
+        font-size: 20px;
+        line-height: 23px; } }
 
 @media screen and (max-width: 768px) {
   header {
@@ -229,22 +225,6 @@ header .menu {
   .sidebartogle-button .btn-menu {
     height: 3em;
     margin: 2.5em 0; }
-
-.banner {
-  padding: 1em 0 8em; }
-  @media screen and (max-width: 768px) {
-    .banner {
-      padding: 12em 0 3em; } }
-  .banner h1 {
-    margin: .35em; }
-    @media screen and (max-width: 420px) {
-      .banner h1 {
-        padding: 0 .5em; } }
-
-.banner-application {
-  background: #fff url(../images/banner-bg.jpg) 0 -90px;
-  background-size: cover;
-  padding: 1em 0 4em; }
 
 .single-expert-profile .wrap-content,
 .expert-full-content .wrap-content,
@@ -392,6 +372,14 @@ header .menu {
   .single-expert-profile .expert-company-logo {
     height: 3em; }
 
+.expert-badges {
+  font-family: 'open_sans_bold';
+  margin: 0 !important; }
+
+.badges img {
+  float: left;
+  height: 2em; }
+
 .expert-full-content {
   float: left;
   display: block;
@@ -409,9 +397,6 @@ header .menu {
     margin-right: 1em;
     padding: .2em .5em;
     border-radius: 4px; }
-  .expert-full-content .badges img {
-    float: left;
-    height: 3em; }
   .expert-full-content .expert-program-title {
     color: #30A7E9;
     float: left; }
@@ -443,10 +428,15 @@ About
   background: #30A7E9;
   color: #FFFFFF;
   display: table;
-  padding: 3em 0;
+  padding: 20px 0;
   width: 100%; }
   .about-lw-co h3 {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 50px; }
+    @media screen and (max-width: 768px) {
+      .about-lw-co h3 {
+        font-size: 26px;
+        margin-bottom: 30px; } }
   .about-lw-co .about-col-2 {
     float: left;
     display: block;
@@ -524,8 +514,10 @@ About
   .sample-list li {
     margin: 10px 0 0 0; }
 
-#key-benefits div img {
-  height: 8em; }
+#key-benefits div {
+  text-align: center; }
+  #key-benefits div img {
+    height: 8em; }
 
 #howitworks {
   background: #EAEAEA; }
@@ -565,11 +557,11 @@ About
   margin-top: 20px !important; }
 
 .tooltip-item {
-  background: white;
+  background: transparent;
   border: 0;
   border-radius: 3px;
   display: inline-block;
-  padding: 0 1em;
+  padding: 0;
   position: relative;
   text-align: center; }
   .tooltip-item:focus, .tooltip-item:hover .tooltip {
@@ -578,13 +570,14 @@ About
   .tooltip-item .tooltip {
     position: absolute;
     right: 0;
-    bottom: 4.5em;
+    bottom: 3em;
     left: 0;
     background-color: white;
     background: #fff;
     border-radius: 3px;
     box-shadow: 0 2px 2px silver;
     color: #333;
+    display: table;
     font-size: 0.75em;
     line-height: 1.5em;
     margin: 0 auto;
@@ -601,8 +594,8 @@ About
       margin: 0; }
     .tooltip-item .tooltip::after {
       position: absolute;
-      right: 0;
-      left: 0;
+      bottom: 0;
+      left: 5px;
       border: 8px solid transparent;
       bottom: -1.3em;
       color: white;
