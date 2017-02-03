@@ -340,14 +340,17 @@ About
 }
 
 #key-benefits {
-  div{
-    img{
+
+  div {
+    text-align: center;
+
+    img {
       height: 8em;
     }
   }
 }
 
-#howitworks{
+#howitworks {
   background: $lw-light-bg;
 }
 

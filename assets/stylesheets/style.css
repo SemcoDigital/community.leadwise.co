@@ -506,8 +506,10 @@ About
   .sample-list li {
     margin: 10px 0 0 0; }
 
-#key-benefits div img {
-  height: 8em; }
+#key-benefits div {
+  text-align: center; }
+  #key-benefits div img {
+    height: 8em; }
 
 #howitworks {
   background: #EAEAEA; }
