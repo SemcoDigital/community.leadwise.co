@@ -560,6 +560,7 @@ About
   background: transparent;
   border: 0;
   border-radius: 3px;
+  cursor: pointer;
   display: inline-block;
   padding: 0;
   position: relative;
