@@ -1,0 +1,48 @@
+.modalDialog {
+  @include position(fixed, 0);
+  background: rgba(0,0,0,0.5);
+  color: #000;
+  display: none;
+	-webkit-transition: opacity 400ms ease-in;
+	-moz-transition: opacity 400ms ease-in;
+	transition: opacity 400ms ease-in;
+  z-index: 99999;
+}
+
+// #cookie, #privacy { display: none;}
+
+.modalDialog > div {
+  background: #fff;
+  border-radius: 10px;
+  height: 70vh;
+	margin: 10% auto;
+  padding: 5em 3em;
+  position: relative;
+	width: 60%;
+}
+
+.modal-body {
+    overflow-y: scroll;
+    height: 380px;
+}
+
+.close {
+  @include position(absolute, 1em 1em null null);
+  float: right;
+	line-height: 25px;
+  text-align: center;
+	text-decoration: none;
+  width: 24px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.internal-modal-content{
+  h3{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+}

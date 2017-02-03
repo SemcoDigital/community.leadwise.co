@@ -605,4 +605,48 @@ About
       text-align: center;
       text-shadow: 0 2px 2px silver; }
 
+.modalDialog {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #000;
+  display: none;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  z-index: 99999; }
+
+.modalDialog > div {
+  background: #fff;
+  border-radius: 10px;
+  height: 70vh;
+  margin: 10% auto;
+  padding: 5em 3em;
+  position: relative;
+  width: 60%; }
+
+.modal-body {
+  overflow-y: scroll;
+  height: 380px; }
+
+.close {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  float: right;
+  line-height: 25px;
+  text-align: center;
+  text-decoration: none;
+  width: 24px; }
+  .close:hover {
+    cursor: pointer; }
+
+.internal-modal-content h3 {
+  margin: 0; }
+.internal-modal-content img {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
