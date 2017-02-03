@@ -624,13 +624,13 @@ About
   border-radius: 10px;
   height: 70vh;
   margin: 10% auto;
-  padding: 5em 3em;
   position: relative;
   width: 60%; }
 
 .modal-body {
   overflow-y: scroll;
-  height: 380px; }
+  height: 380px;
+  padding: 30px; }
 
 .close {
   position: absolute;
