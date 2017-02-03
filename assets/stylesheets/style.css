@@ -627,6 +627,12 @@ About
   margin: 10% auto;
   position: relative;
   width: 60%; }
+  @media screen and (max-width: 768px) {
+    .modalDialog > div {
+      height: auto;
+      margin: auto;
+      width: 94%;
+      margin-top: 10px; } }
 
 .modal-body {
   overflow-y: scroll;
