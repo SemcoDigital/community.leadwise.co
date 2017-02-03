@@ -160,6 +160,9 @@
       padding: 0;
       li{
         padding: 0 .5em;
+         @include media($mobile) {
+         font-size: 2em;
+        }
         a{
           color: $lw-blue;
         }
@@ -185,7 +188,9 @@
   img{
     float: left;
     height: 2em;
-    // margin-right: 1em;
+    @include media($mobile) {
+      height: 3em;
+    }
   }
 }
 

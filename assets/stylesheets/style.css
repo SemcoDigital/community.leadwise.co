@@ -366,6 +366,9 @@ header .menu {
       padding: 0; }
       .single-expert-profile .expert-profile-block .expert-social li {
         padding: 0 .5em; }
+        @media screen and (max-width: 420px) {
+          .single-expert-profile .expert-profile-block .expert-social li {
+            font-size: 2em; } }
         .single-expert-profile .expert-profile-block .expert-social li a {
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
@@ -382,6 +385,9 @@ header .menu {
 .badges img {
   float: left;
   height: 2em; }
+  @media screen and (max-width: 420px) {
+    .badges img {
+      height: 3em; } }
 
 .expert-full-content {
   float: left;
