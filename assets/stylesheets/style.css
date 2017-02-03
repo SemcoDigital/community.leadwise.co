@@ -331,6 +331,9 @@ header .menu {
 .single-expert-profile {
   background: #EAEAEA;
   padding: 2em; }
+  @media screen and (max-width: 420px) {
+    .single-expert-profile {
+      margin-top: 8em; } }
   .single-expert-profile .expert-name {
     margin: .5em; }
   .single-expert-profile .expert-profile-block {
@@ -354,7 +357,7 @@ header .menu {
           height: inherit;
           margin: 0;
           padding: 0;
-          width: 100%; } }
+          width: 70%; } }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
     .single-expert-profile .expert-profile-block .expert-social {
