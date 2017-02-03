@@ -38,24 +38,43 @@ layout: default
         {% for badge in page.badges %}
         <div class="tooltip-item">
           <img src="/assets/images/badges/badges-{{ badge }}.svg">
-          <div class="tooltip">
+          <div class="tooltip" data-attr="{{ badge }}">
             <p>{{ badge | capitalize}}</p>
           </div>
         </div>
-        <!--modal for badges
-        <div id="openModal" class="modalDialog">
-          <div>
-            <a title="Close" class="close">X</a>
-            <div class="modal-body">
-              <div id="teal" class="information">
-                  {% include badges-7-movements-teal.html %}
-              </div>
-            </div>
-          </div>
-        </div>-->
+        <!--modal for badges-->
         {% endfor %}
       </div>
     </section>
+  </div>
+
+  <div id="openModal" class="modalDialog" style="display:none">
+    <div>
+      <a title="Close" class="close">X</a>
+      <div class="modal-body">
+        <div id="teal" class="information" style="display:none">
+            {% include badges-7-movements-teal.html %}
+        </div>
+        <div id="holacracy" class="information" style="display:none">
+            {% include badges-7-movements-holacracy.html %}
+        </div>
+        <div id="resposive-org" class="information" style="display:none">
+            {% include badges-7-movements-responsive-org.html %}
+        </div>
+        <div id="rework" class="information" style="display:none">
+            {% include badges-7-movements-rework.html %}
+        </div>
+        <div id="semco-style" class="information" style="display:none">
+            {% include badges-7-movements-semco-style.html %}
+        </div>
+        <div id="sociocracy" class="information" style="display:none">
+            {% include badges-7-movements-sociocracy.html %}
+        </div>
+        <div id="lean" class="information" style="display:none">
+            {% include badges-7-movements-lean.html %}
+        </div>
+      </div>
+    </div>
   </div>
 
   <div class="expert-company-info">

@@ -16,7 +16,7 @@ $(document).ready(function() {
   });
 
 
-  $(".openModal").click(function() {
+  $(".tooltip").click(function() {
     $('.modalDialog').show();
     $('#'+$(this).data('attr')).show();
     return false;
@@ -26,5 +26,7 @@ $(document).ready(function() {
       $('.information').hide();
       $('.modalDialog').hide();
   });
+
+
 
 });
