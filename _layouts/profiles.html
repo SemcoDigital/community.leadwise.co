@@ -33,6 +33,17 @@ layout: default
         <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
         <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
       </ul>
+      <p class="expert-badges">Badges</p>
+      <div class="badges">
+        {% for badge in page.badges %}
+        <div class="tooltip-item">
+          <img src="/assets/images/badges/badges-{{ badge }}.svg">
+          <div class="tooltip">
+            <p>{{ badge | capitalize}}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </section>
   </div>
 
@@ -65,17 +76,17 @@ layout: default
       {% endfor %}
     </p>
     <br>
-    <p><b>Badges</b></p>
+    <!--<p><b>Badges</b></p>
     <div class="badges">
-    {% for badge in page.badges %}
-    <div class="tooltip-item">
-      <img src="/assets/images/badges/badges-{{ badge }}.svg">
-      <div class="tooltip">
-        <p>{{ badge | capitalize}}</p>
+      {% for badge in page.badges %}
+      <div class="tooltip-item">
+        <img src="/assets/images/badges/badges-{{ badge }}.svg">
+        <div class="tooltip">
+          <p>{{ badge | capitalize}}</p>
+        </div>
       </div>
-    </div>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>-->
     <br clear="all">
 
     <p><b>Portfolio of Programs</b></p>
