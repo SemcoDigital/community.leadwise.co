@@ -41,7 +41,8 @@ pushcrew: true
     <h3>Explore our community</h3>
     <p class="community-description">We are organizational designers, independent consultants, intrapreneurs and catalysts of change who believe that work environments should put people first.</p>
 
-    {% for profile in site.posts %}
+    {% assign posts = site.posts | sort:'title' %}
+    {% for profile in posts %}
     <section class="single-expert">
       <div class="single-expert-img">
         <img src="/assets/images/avatar/{{ profile.avatar }}" alt="Expert avatar">
