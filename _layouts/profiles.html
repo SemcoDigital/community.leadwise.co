@@ -29,10 +29,11 @@ layout: default
       <p>{{ page.location }}</p>
       <p class="expert-language">{{ page.languages | join: ", "}}</p>
       <ul class="expert-social">
-        <li><a href="" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
-        <li><a href="" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        {% if page.facebook %}<li><a href="{{ page.facebook }}" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li> {% endif %}
+        {% if page.twitter %}<li><a href="http://www.twitter.com/{{ page.twitter }}" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a></li> {% endif %}
+        {% if page.linkedin %}<li><a href="https://br.linkedin.com/in{{ page.linkedin }}" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> {% endif %}
       </ul>
+      {% if page.bages %}
       <p class="expert-badges">Badges</p>
       <div class="badges">
         {% for badge in page.badges %}
@@ -45,6 +46,7 @@ layout: default
         <!--modal for badges-->
         {% endfor %}
       </div>
+      {% endif %}
     </section>
   </div>
 
@@ -87,9 +89,10 @@ layout: default
       <p>{{ company_infos.name }}</p>
       <p><a href="{{ page.company.website }}">{{ company_infos.website }}</a></p>
     {% endif %}
+      {% if page.personal_website %} <p><a href="{{ page.personal_website }}">{{ page.personal_website }}</a></p> {% endif %}
       <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
       <p><a href="tel:{{ page.phone }}">{{ page.phone }}</a></input></p>
-      <a href="" class="btn">Contact Now</a>
+      <a href="mailto:{{ page.email }}" class="btn">Contact Now</a>
   </div>
 
   </div>
@@ -118,12 +121,13 @@ layout: default
       {% endfor %}
     </div>-->
     <br clear="all">
-
+    {% if page.programs %}
     <p><b>Portfolio of Programs</b></p>
     {% for program in page.programs %}
     <h4 class="expert-program-title">{{ program.name }}</h4>
     <p><a href="{{ program.link }}" class="expert-program-link">Learn more</a></p>
     {% endfor %}
+    {% endif %}
   </div>
 </div>
 
