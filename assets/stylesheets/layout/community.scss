@@ -120,6 +120,9 @@
 .single-expert-profile {
   background: $lw-light-bg;
   padding: 2em;
+  @include media($mobile) {
+    margin-top: 8em;
+  }
   // @include span-columns(12);
   .expert-name{
     margin: .5em;
@@ -145,7 +148,7 @@
         height: inherit;
         margin: 0;
         padding: 0;
-        width: 100%;
+        width: 70%;
       }
     }
     p {
@@ -157,6 +160,9 @@
       padding: 0;
       li{
         padding: 0 .5em;
+         @include media($mobile) {
+         font-size: 2em;
+        }
         a{
           color: $lw-blue;
         }
@@ -182,7 +188,9 @@
   img{
     float: left;
     height: 2em;
-    // margin-right: 1em;
+    @include media($mobile) {
+      height: 3em;
+    }
   }
 }
 

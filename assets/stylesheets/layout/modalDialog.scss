@@ -16,14 +16,21 @@
   border-radius: 10px;
   height: 70vh;
 	margin: 10% auto;
-  padding: 5em 3em;
   position: relative;
 	width: 60%;
+
+  @include media($tablet) {
+    height: auto;
+    margin: auto;
+    width: 94%;
+    margin-top: 10px;
+  }
 }
 
 .modal-body {
     overflow-y: scroll;
     height: 380px;
+    padding: 30px;
 }
 
 .close {

@@ -331,6 +331,9 @@ header .menu {
 .single-expert-profile {
   background: #EAEAEA;
   padding: 2em; }
+  @media screen and (max-width: 420px) {
+    .single-expert-profile {
+      margin-top: 8em; } }
   .single-expert-profile .expert-name {
     margin: .5em; }
   .single-expert-profile .expert-profile-block {
@@ -354,7 +357,7 @@ header .menu {
           height: inherit;
           margin: 0;
           padding: 0;
-          width: 100%; } }
+          width: 70%; } }
     .single-expert-profile .expert-profile-block p {
       margin: .5em; }
     .single-expert-profile .expert-profile-block .expert-social {
@@ -363,6 +366,9 @@ header .menu {
       padding: 0; }
       .single-expert-profile .expert-profile-block .expert-social li {
         padding: 0 .5em; }
+        @media screen and (max-width: 420px) {
+          .single-expert-profile .expert-profile-block .expert-social li {
+            font-size: 2em; } }
         .single-expert-profile .expert-profile-block .expert-social li a {
           color: #30A7E9; }
   .single-expert-profile .expert-company-info {
@@ -379,6 +385,9 @@ header .menu {
 .badges img {
   float: left;
   height: 2em; }
+  @media screen and (max-width: 420px) {
+    .badges img {
+      height: 3em; } }
 
 .expert-full-content {
   float: left;
@@ -560,6 +569,7 @@ About
   background: transparent;
   border: 0;
   border-radius: 3px;
+  cursor: pointer;
   display: inline-block;
   padding: 0;
   position: relative;
@@ -624,13 +634,19 @@ About
   border-radius: 10px;
   height: 70vh;
   margin: 10% auto;
-  padding: 5em 3em;
   position: relative;
   width: 60%; }
+  @media screen and (max-width: 768px) {
+    .modalDialog > div {
+      height: auto;
+      margin: auto;
+      width: 94%;
+      margin-top: 10px; } }
 
 .modal-body {
   overflow-y: scroll;
-  height: 380px; }
+  height: 380px;
+  padding: 30px; }
 
 .close {
   position: absolute;
