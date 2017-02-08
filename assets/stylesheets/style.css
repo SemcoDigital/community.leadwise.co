@@ -275,6 +275,7 @@ header .menu {
 
 .single-expert {
   margin-top: 2em;
+  min-height: 16em;
   float: left;
   display: block;
   margin-right: 2.35765%;
@@ -282,12 +283,16 @@ header .menu {
   margin-right: 0; }
   .single-expert:last-child {
     margin-right: 0; }
+  @media screen and (max-width: 768px) {
+    .single-expert {
+      min-height: 22em; } }
   @media screen and (max-width: 420px) {
     .single-expert {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 100%; }
+      width: 100%;
+      min-height: inherit; }
       .single-expert:last-child {
         margin-right: 0; } }
   .single-expert .single-expert-img {
@@ -301,6 +306,9 @@ header .menu {
       float: left;
       padding: 0 1em;
       width: 100%; }
+      @media screen and (max-width: 768px) {
+        .single-expert .single-expert-img img {
+          width: 50%; } }
       @media screen and (max-width: 420px) {
         .single-expert .single-expert-img img {
           width: 100%;
