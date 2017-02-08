@@ -49,7 +49,7 @@ pushcrew: true
       </div>
       <div class="single-expert-txt">
         <p class="expert-name">{{ profile.name }}</p>
-        <p class="expert-activity">{{ profile.short_description }}</p>
+        <p class="expert-activity">{{ profile.short_description | truncate: 140 }}</p>
         <p>{{ profile.location }}</p>
         <p class="expert-language">{{ profile.languages | join: ", "}}</p>
         <p><a href="{{ profile.url }}">View full profile</a></p>
