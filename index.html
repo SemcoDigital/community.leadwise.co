@@ -41,7 +41,7 @@ pushcrew: true
     <h3>Explore our community</h3>
     <p class="community-description">We are organizational designers, independent consultants, intrapreneurs and catalysts of change who believe that work environments should put people first.</p>
 
-    {% assign posts = site.posts | sort:'title' %}
+    {% assign posts = paginator.posts | sort:'title' %}
     {% for profile in posts %}
     <section class="single-expert">
       <div class="single-expert-img">
@@ -56,6 +56,17 @@ pushcrew: true
       </div>
     </section>
     {% endfor %}
+
+    <!-- Pagination links -->
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+  {% endif %}
+
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+  {% endif %}
+</div>
   </div>
 </section>
 

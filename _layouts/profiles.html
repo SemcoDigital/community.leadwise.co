@@ -84,9 +84,13 @@ layout: default
     {% if page.company %}
     {% assign company_infos = page.company[0]%}
       <p class="expert-badges">Company</p>
+
+      {% if company_infos.logo %}
       <section>
-        <img src="/assets/images/{{ company_infos.logo }}" alt="Company Logo" class="expert-company-logo">
+        <img src="/assets/images/{{ company_infos.logo }}" alt="Company Logo" class="expert-company-logo" data-attr="">
       </section>
+      {% endif %}
+
       <p>{{ company_infos.name }}</p>
       <p><a href="{{ page.company.website }}">{{ company_infos.website }}</a></p>
     {% endif %}
