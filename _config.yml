@@ -5,4 +5,4 @@ exclude: ['Gemfile', 'Gemfile.lock', 'README.md', 'Procfile', 'CNAME', 'template
 
 permalink: /:categories/:title
 
-paginate: 20
+paginate: 90

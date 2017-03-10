@@ -284,7 +284,7 @@ header {
 
 .community-list {
   text-align: center;
-  padding: 60px 0; }
+  padding-bottom: 60px; }
   .community-list h3 {
     color: #30A7E9;
     margin: 20px 0 0 0; }
