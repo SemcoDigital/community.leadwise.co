@@ -90,9 +90,12 @@ layout: default
         <img src="/assets/images/{{ company_infos.logo }}" alt="Company Logo" class="expert-company-logo" data-attr="">
       </section>
       {% endif %}
-
+      {% if company_infos.website != "" %}
+        <p><a href="{{ company_infos.website }}">{{ company_infos.name || company_infos.website }}</a></p>
+      {% else %}
       <p>{{ company_infos.name }}</p>
-      <p><a href="{{ page.company.website }}">{{ company_infos.website }}</a></p>
+      {% endif %}
+
     {% endif %}
       {% if page.personal_website %} <p><a href="{{ page.personal_website }}">{{ page.personal_website }}</a></p> {% endif %}
       <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
