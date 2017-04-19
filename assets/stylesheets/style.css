@@ -115,7 +115,8 @@ button, .btn, .btn-cta {
   background-size: cover;
   display: table;
   width: 100%;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  float: left; }
   @media screen and (max-width: 768px) {
     .main-banner {
       background-position: 0 0; }
@@ -131,7 +132,7 @@ button, .btn, .btn-cta {
       .main-banner h1 {
         font-size: 40px;
         line-height: 40px;
-        margin: 130px 0 -5px 0;
+        margin: -20px 0 0 0;
         background: #fff;
         padding: 10px; } }
   .main-banner h2 {
@@ -146,10 +147,10 @@ button, .btn, .btn-cta {
 
 header {
   margin-top: 30px; }
-  @media screen and (max-width: 768px) {
-    header {
-      position: absolute;
-      width: 100%; } }
+  header::after {
+    clear: both;
+    content: "";
+    display: block; }
   header .logo {
     height: 6em;
     margin: 35px 0 0 0;
@@ -160,24 +161,38 @@ header {
         height: auto;
         float: none; } }
   header .menu {
-    display: table;
     float: right;
     font-family: 'open_sans_light';
     margin: 4em 0;
     padding: 0; }
     @media screen and (max-width: 768px) {
       header .menu {
-        display: none; } }
+        width: 100%;
+        background: #f2f2f2;
+        padding: 15px;
+        margin: 0 0 30px 0;
+        display: none;
+        float: left; } }
     header .menu li {
       display: inline-block;
       list-style: none;
       margin-left: 35px; }
       @media screen and (max-width: 768px) {
         header .menu li {
-          margin-left: 0; } }
+          margin-left: 0;
+          display: block;
+          margin-bottom: 2px; } }
       header .menu li a {
         color: #95989A;
         text-decoration: none; }
+        @media screen and (max-width: 768px) {
+          header .menu li a {
+            display: block;
+            height: 36px;
+            line-height: 36px;
+            background: #4B4B4B;
+            padding: 0 10px;
+            color: #fff; } }
         header .menu li a:hover {
           opacity: .8; }
       header .menu li .btn-cta {
@@ -191,6 +206,10 @@ header {
         display: inline-block;
         letter-spacing: 2px;
         padding: 0 25px; }
+        @media screen and (max-width: 768px) {
+          header .menu li .btn-cta {
+            display: block;
+            margin-top: 13px; } }
 
 .headervisible {
   width: 100%;
