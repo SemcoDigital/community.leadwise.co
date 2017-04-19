@@ -8,7 +8,7 @@ layout: default
   <div class="wrap-content">
     <img src="assets/images/logo-leadwise-network.svg" alt="LeadWise Network" class="logo">
     <label for="sidebartoggle" class="sidebartogle-button">
-      <img class="btn-menu" src="assets/images/icon-menu.svg" alt="menu">
+      <img class="btn-menu" src="assets/images/icon-menu.svg" auscandlt="menu">
     </label>
     <ul class="menu">
       <li><a class="scroll-link" data-soffset="0" href="/#explore-network">Explore our Network</a></li>
@@ -91,13 +91,13 @@ layout: default
       </section>
       {% endif %}
       {% if company_infos.website != "" %}
-        <p><a href="{{ company_infos.website }}">{{ company_infos.name || company_infos.website }}</a></p>
+        <p><a href="{% if company_infos.website contains 'http://' or company_infos.website contains 'https://' %}{{ company_infos.website }}{% else %} http://{{ company_infos.website }}{% endif%}">{{ company_infos.name || company_infos.website }}</a></p>
       {% else %}
       <p>{{ company_infos.name }}</p>
       {% endif %}
 
     {% endif %}
-      {% if page.personal_website %} <p><a href="{{ page.personal_website }}">{{ page.personal_website }}</a></p> {% endif %}
+      {% if page.personal_website %} <p><a href="{% if page.personal_website 'http://' or page.personal_website 'https://' %}{{ page.personal_website }}{% else %} http://{{ page.personal_website }}{% endif%}">{{ page.personal_website }}</a></p> {% endif %}
       <p><a href="mailto:{{ page.email }}">{{ page.email }}</a></p>
       <p><a href="tel:{{ page.phone }}">{{ page.phone }}</a></input></p>
       <a href="mailto:{{ page.email }}" class="btn">Contact Now</a>
