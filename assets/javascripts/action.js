@@ -51,4 +51,8 @@ $(document).ready(function () {
     }
   });
 
+  $(".sidebartogle-button").click(function() {
+    $('.menu').toggle();
+  });
+
 });
